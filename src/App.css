@@ -1,0 +1,63 @@
+/* Custom Font Declarations */
+@font-face {
+  font-family: "Neue Plak";
+  src: url("/assets/font/NeuePlak-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("/assets/font/NeuePlak-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("/assets/font/NeuePlak-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("/assets/font/NeuePlak-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("/assets/font/NeuePlak-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Plak";
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  @apply mx-auto px-2 sm:px-4;
+}
+
+.section-padding {
+  @apply pt-12 pb-12 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24 xl:pt-[105px] xl:pb-[105px];
+}
+
+.section-padding-top {
+  @apply pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-[105px];
+}
+
+.section-padding-bottom {
+  @apply pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[105px];
+}
+
+.section-heading {
+  @apply text-[#15234E] text-center text-[20px] md:text-[24px] xl:text-[36px] font-normal pb-7
+}
