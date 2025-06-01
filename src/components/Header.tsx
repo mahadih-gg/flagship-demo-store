@@ -19,7 +19,7 @@ const Header = () => {
         style={{ background: "linear-gradient(275deg, #F55507 4.07%, #E1709E 26.59%, #C87EFF 46.16%, #1C89F8 95.93%)" }}
       >
         <div className="container">
-          <p className="text-white text-xs lg:text-base xl:text-lg text-center py-2">
+          <p className="text-white text-xs lg:text-base xl:text-lg text-center py-2 font-semibold">
             This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
           </p>
         </div>

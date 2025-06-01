@@ -4,14 +4,14 @@ const Home = () => {
   return (
     <main>
       <section className="container">
-        <div className="flex justify-center items-center py-2 md:py-10">
+        <div className="flex justify-center items-center py-2 pb-5 md:py-10">
 
           <img src="/assets/images/home/sm/1.png" className="block sm:hidden" alt="hero" />
 
           <img src="/assets/images/home/1.png" className="hidden sm:block" alt="hero" />
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           <img src="/assets/images/home/2.png" alt="hero" />
         </div>
       </section>
@@ -26,7 +26,7 @@ const Home = () => {
       </section>
 
       <section className="container section-padding-top">
-        <h2 className="section-heading">Discover Exciting Offers for You</h2>
+        <h2 className="section-heading">Providing Support 24/7</h2>
 
         <div className="flex justify-center items-center">
           <img src="/assets/images/home/3.png" className="hidden lg:block" alt="hero" />
