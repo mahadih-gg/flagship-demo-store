@@ -24,7 +24,7 @@ const Product = () => {
 
             <div>
               <h3 className="text-2xl text-[#1D1D1F] font-bold pt-11">
-                Explore More About Apple iPhone 16
+                What’s New in iPhone 16
               </h3>
               <EntryPoint
                 id="#096077"
@@ -43,7 +43,7 @@ const Product = () => {
 
             <div>
               <h3 className="text-2xl text-[#1D1D1F] font-bold pt-8 pb-2.5">
-                Customer Reviews
+                What People Are Loving
               </h3>
 
               <EntryPoint
@@ -70,7 +70,7 @@ const Product = () => {
 
       <section className="container">
 
-        <h2 className="section-heading">Customer Reviews</h2>
+        <h2 className="section-heading">What People Are Loving</h2>
 
         <EntryPoint
           id="#095825"

@@ -5,9 +5,9 @@ const Header = () => {
   const location = useLocation();
 
   const getLinkClass = (href: string) => {
-    const baseClass = "block rounded-full px-2 md:px-5 py-2 md:py-3 text-xs sm:text-sm font-medium transition-colors";
+    const baseClass = "block rounded-full px-4 md:px-6 py-2 md:py-3 text-xs sm:text-sm font-medium transition-colors";
     const activeClass = "bg-[#0071E3] text-white";
-    const inactiveClass = "text-[#15234E] hover:text-[#0071E3] hover:bg-gray-100";
+    const inactiveClass = "text-[#15234E] hover:text-[#0071E3]";
 
     return `${baseClass} ${location.pathname === href ? activeClass : inactiveClass}`;
   };
@@ -27,16 +27,16 @@ const Header = () => {
       <nav className="container flex justify-between items-center py-11">
         <img src="/assets/images/nav-logo.png" alt="logo" className="h-10" />
 
-        <div className="flex space-x-1 bg-white rounded-full"
-          style={{
-            boxShadow: "0px 0px 18px 0px rgba(157, 209, 255, 0.35)",
-          }}
-        >
+        <div className="flex space-x-1 bg-white rounded-full">
           <Link to="/" className={getLinkClass("/")}>
-            Home
+            <span className="font-semibold">
+              Home
+            </span>
           </Link>
           <Link to="/product" className={getLinkClass("/product")}>
-            Product
+            <span className="font-semibold">
+              Product
+            </span>
           </Link>
         </div>
 

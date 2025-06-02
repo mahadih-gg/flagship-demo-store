@@ -17,7 +17,7 @@ const Home = () => {
       </section>
 
       <section className="container section-padding-top">
-        <h2 className="section-heading">Discover Exciting Offers for You</h2>
+        <h2 className="section-heading">Don’t Miss These Limited-Time Deals</h2>
         <EntryPoint
           id="#187731"
           skeletonType={EntryPointType.RECTANGLE}
