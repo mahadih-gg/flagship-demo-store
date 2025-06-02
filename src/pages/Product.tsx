@@ -24,7 +24,7 @@ const Product = () => {
 
             <div>
               <h3 className="text-2xl text-[#1D1D1F] font-bold pt-11">
-                What’s New in iPhone 16
+                What's New in iPhone 16
               </h3>
               <EntryPoint
                 id="#096077"
