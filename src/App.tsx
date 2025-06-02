@@ -1,8 +1,11 @@
+import { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router'
 import './App.css'
 import DefaultLayout from './layouts/DefaultLayout'
-import Home from './pages/Home'
-import Product from './pages/Product'
+import Loading from './components/Loading'
+
+const Home = lazy(() => import('./pages/Home'))
+const Product = lazy(() => import('./pages/Product'))
 
 function App() {
 
@@ -10,8 +13,16 @@ function App() {
     <>
       <Routes>
         <Route element={<DefaultLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/" element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          } />
+          <Route path="/product" element={
+            <Suspense fallback={<Loading />}>
+              <Product />
+            </Suspense>
+          } />
         </Route>
       </Routes>
     </>
