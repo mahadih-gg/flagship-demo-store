@@ -70,7 +70,7 @@ const Product = () => {
 
       <section className="container">
 
-        <h2 className="section-heading">Customer Reviews</h2>
+        <h2 className="section-heading">You May Also Like These Products</h2>
 
         <EntryPoint
           id="#095825"
