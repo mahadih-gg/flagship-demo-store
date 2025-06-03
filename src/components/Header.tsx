@@ -25,7 +25,7 @@ const Header = () => {
         </div>
       </div>
       <nav className="container flex justify-between items-center py-11">
-        <img src="/assets/images/nav-logo.png" alt="logo" className="h-10" />
+        <img src="/assets/images/nav-logo.webp" alt="logo" className="h-10" />
 
         <div className="flex space-x-1 bg-white rounded-full">
           <Link to="/" className={getLinkClass("/")}>
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
 
         <div className="hidden md:flex">
-          <img src="/assets/images/nav-icons.png" alt="icons" className="h-5" />
+          <img src="/assets/images/nav-icons.webp" alt="icons" className="h-5" />
         </div>
       </nav>
     </>

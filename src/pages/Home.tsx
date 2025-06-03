@@ -4,15 +4,15 @@ const Home = () => {
   return (
     <main>
       <section className="container">
-        <div className="flex justify-center items-center py-2 pb-5 md:py-10">
+        <div className="max-w-[960px] mx-auto flex justify-center items-center py-2 pb-5 md:py-10">
 
-          <img src="/assets/images/home/sm/1.png" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/sm/1.webp" className="block sm:hidden" alt="hero" />
 
-          <img src="/assets/images/home/1.png" className="hidden sm:block" alt="hero" />
+          <img src="/assets/images/home/1.webp" className="hidden sm:block" alt="hero" />
         </div>
 
         <div className="flex justify-center items-center ">
-          <img src="/assets/images/home/2.png" alt="hero" />
+          <img src="/assets/images/home/2.webp" alt="hero" />
         </div>
       </section>
 
@@ -29,11 +29,11 @@ const Home = () => {
         <h2 className="section-heading">Providing Support 24/7</h2>
 
         <div className="flex justify-center items-center">
-          <img src="/assets/images/home/3.png" className="hidden lg:block" alt="hero" />
+          <img src="/assets/images/home/3.webp" className="hidden lg:block" alt="hero" />
 
-          <img src="/assets/images/home/md/3.png" className="hidden sm:block lg:hidden" alt="hero" />
+          <img src="/assets/images/home/md/3.webp" className="hidden sm:block lg:hidden" alt="hero" />
 
-          <img src="/assets/images/home/sm/3.png" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/sm/3.webp" className="block sm:hidden" alt="hero" />
         </div>
 
       </section>
@@ -43,11 +43,11 @@ const Home = () => {
 
         <div className="flex justify-center items-center">
 
-          <img src="/assets/images/home/sm/4.png" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/sm/4.webp" className="block sm:hidden" alt="hero" />
 
-          <img src="/assets/images/home/md/4.png" className="hidden sm:block lg:hidden" alt="hero" />
+          <img src="/assets/images/home/md/4.webp" className="hidden sm:block lg:hidden" alt="hero" />
 
-          <img src="/assets/images/home/4.png" className="hidden lg:block" alt="hero" />
+          <img src="/assets/images/home/4.webp" className="hidden lg:block" alt="hero" />
         </div>
 
       </section>
@@ -59,11 +59,11 @@ const Home = () => {
 
           <div className="flex justify-center items-center">
 
-            <img src="/assets/images/home/sm/5.png" className="block sm:hidden" alt="hero" />
+            <img src="/assets/images/home/sm/5.webp" className="block sm:hidden" alt="hero" />
 
-            <img src="/assets/images/home/md/5.png" className="hidden sm:block lg:hidden" alt="hero" />
+            <img src="/assets/images/home/md/5.webp" className="hidden sm:block lg:hidden" alt="hero" />
 
-            <img src="/assets/images/home/5.png" className="hidden lg:block" alt="hero" />
+            <img src="/assets/images/home/5.webp" className="hidden lg:block" alt="hero" />
           </div>
 
         </div>
@@ -75,11 +75,11 @@ const Home = () => {
 
         <div className="flex justify-center items-center">
 
-          <img src="/assets/images/home/sm/6.png" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/sm/6.webp" className="block sm:hidden" alt="hero" />
 
-          <img src="/assets/images/home/md/6.png" className="hidden sm:block lg:hidden" alt="hero" />
+          <img src="/assets/images/home/md/6.webp" className="hidden sm:block lg:hidden" alt="hero" />
 
-          <img src="/assets/images/home/6.png" className="hidden lg:block" alt="hero" />
+          <img src="/assets/images/home/6.webp" className="hidden lg:block" alt="hero" />
         </div>
 
       </section>
