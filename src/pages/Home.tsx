@@ -6,13 +6,20 @@ const Home = () => {
       <section className="container">
         <div className="max-w-[960px] mx-auto flex justify-center items-center py-2 pb-5 md:py-10">
 
-          <img src="/assets/images/home/sm/1.webp" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/1.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/home/lg/1.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/home/md/1.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/home/sm/1.webp" className="block sm:hidden" alt="" />
 
-          <img src="/assets/images/home/1.webp" className="hidden sm:block" alt="hero" />
         </div>
 
         <div className="flex justify-center items-center ">
-          <img src="/assets/images/home/2.webp" alt="hero" />
+
+          <img src="/assets/images/home/2.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/home/lg/2.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/home/md/2.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/home/sm/2.webp" className="block sm:hidden" alt="" />
+
         </div>
       </section>
 
@@ -29,11 +36,12 @@ const Home = () => {
         <h2 className="section-heading">Providing Support 24/7</h2>
 
         <div className="flex justify-center items-center">
-          <img src="/assets/images/home/3.webp" className="hidden lg:block" alt="hero" />
 
-          <img src="/assets/images/home/md/3.webp" className="hidden sm:block lg:hidden" alt="hero" />
+          <img src="/assets/images/home/3.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/home/lg/3.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/home/md/3.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/home/sm/3.webp" className="block sm:hidden" alt="" />
 
-          <img src="/assets/images/home/sm/3.webp" className="block sm:hidden" alt="hero" />
         </div>
 
       </section>
@@ -43,11 +51,12 @@ const Home = () => {
 
         <div className="flex justify-center items-center">
 
-          <img src="/assets/images/home/sm/4.webp" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/4.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/home/lg/4.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/home/md/4.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/home/sm/4.webp" className="block sm:hidden" alt="" />
 
-          <img src="/assets/images/home/md/4.webp" className="hidden sm:block lg:hidden" alt="hero" />
 
-          <img src="/assets/images/home/4.webp" className="hidden lg:block" alt="hero" />
         </div>
 
       </section>
@@ -59,11 +68,11 @@ const Home = () => {
 
           <div className="flex justify-center items-center">
 
-            <img src="/assets/images/home/sm/5.webp" className="block sm:hidden" alt="hero" />
+            <img src="/assets/images/home/5.webp" className="hidden 2xl:block" alt="" />
+            <img src="/assets/images/home/lg/5.webp" className="hidden lg:block 2xl:hidden" alt="" />
+            <img src="/assets/images/home/md/5.webp" className="hidden sm:block lg:hidden" alt="" />
+            <img src="/assets/images/home/sm/5.webp" className="block sm:hidden" alt="" />
 
-            <img src="/assets/images/home/md/5.webp" className="hidden sm:block lg:hidden" alt="hero" />
-
-            <img src="/assets/images/home/5.webp" className="hidden lg:block" alt="hero" />
           </div>
 
         </div>
@@ -75,11 +84,11 @@ const Home = () => {
 
         <div className="flex justify-center items-center">
 
-          <img src="/assets/images/home/sm/6.webp" className="block sm:hidden" alt="hero" />
+          <img src="/assets/images/home/6.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/home/lg/6.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/home/md/6.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/home/sm/6.webp" className="block sm:hidden" alt="" />
 
-          <img src="/assets/images/home/md/6.webp" className="hidden sm:block lg:hidden" alt="hero" />
-
-          <img src="/assets/images/home/6.webp" className="hidden lg:block" alt="hero" />
         </div>
 
       </section>

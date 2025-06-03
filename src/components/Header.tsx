@@ -34,7 +34,12 @@ const Header = () => {
         </div>
       </div>
       <nav className="container flex justify-between items-center py-11">
-        <img src="/assets/images/nav-logo.webp" alt="logo" className="h-10" />
+        <Link to="/" className="w-[109px] sm:w-[145px] lg:w-[185px] 2xl:w-[246px]">
+          <img src="/assets/images/nav-logo.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/lg/nav-logo.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/md/nav-logo.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/sm/nav-logo.webp" className="block sm:hidden" alt="" />
+        </Link>
 
         <div className="flex space-x-1 bg-white rounded-full">
           <Link to="/" className={`${getLinkClass("/")}`}>
@@ -47,8 +52,11 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex">
-          <img src="/assets/images/nav-icons.webp" alt="icons" className="h-5" />
+        <div className="hidden md:flex md:w-[80px] lg:w-[112px] 2xl:w-[180px]">
+          <img src="/assets/images/nav-icons.webp" className="hidden 2xl:block" alt="" />
+          <img src="/assets/images/lg/nav-icons.webp" className="hidden lg:block 2xl:hidden" alt="" />
+          <img src="/assets/images/md/nav-icons.webp" className="hidden sm:block lg:hidden" alt="" />
+          <img src="/assets/images/sm/nav-icons.webp" className="block sm:hidden" alt="" />
         </div>
       </nav>
     </>
