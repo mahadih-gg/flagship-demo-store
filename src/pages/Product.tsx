@@ -9,7 +9,7 @@ const Product = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 2xl:gap-28">
 
           <div>
-            <div className="relative flex justify-center items-center rounded-xl bg-[#EFF5F9] py-[24px] sm:py-[30px] lg:py-[75px] xl:py-[100px]">
+            <div className="relative flex justify-center items-center rounded-xl bg-[#EFF5F9] py-[24px] sm:py-[95px] lg:py-[30px] xl:py-[85px]">
 
               <button className="absolute bg-[#15234E]/10 text-white rounded-full flex justify-center items-center size-5 xl:size-10 left-4 lg:left-6 2xl:left-10 top-1/2 -translate-y-1/2">
                 <GoChevronLeft className="text-lg" />

@@ -33,7 +33,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <nav className="container flex justify-between items-center py-11">
+      <nav className="container flex justify-between items-center py-8 md:py-11">
         <Link to="/" className="w-[109px] sm:w-[145px] lg:w-[185px] 2xl:w-[246px]">
           <img src="/assets/images/nav-logo.webp" className="hidden 2xl:block" alt="" />
           <img src="/assets/images/lg/nav-logo.webp" className="hidden lg:block 2xl:hidden" alt="" />
@@ -41,12 +41,12 @@ const Header = () => {
           <img src="/assets/images/sm/nav-logo.webp" className="block sm:hidden" alt="" />
         </Link>
 
-        <div className="flex space-x-1 bg-white rounded-full">
+        <div className="flex bg-white rounded-full">
           <Link to="/" className={`${getLinkClass("/")}`}>
             Home
           </Link>
 
-          <Link to="/product" className={`${getLinkClass("/product")}`}>
+          <Link to="/product" className={`-ml-2 ${getLinkClass("/product")}`}>
             Product
             {isShowCursor && <AnimatedCursor />}
           </Link>
