@@ -59,7 +59,7 @@
 }
 
 .section-heading {
-  @apply text-[#15234E] font-medium text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
+  @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
   letter-spacing: -3%;
   line-height: 108%;
 }
