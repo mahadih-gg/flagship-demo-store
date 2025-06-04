@@ -7,17 +7,24 @@ const AnimatedCursor = () => {
 
   useEffect(() => {
     let intervalId: ReturnType<typeof setTimeout>;
+    let pingOn: ReturnType<typeof setTimeout>;
+    let pingOff: ReturnType<typeof setTimeout>;
 
     const loop = () => {
-      setTimeout(() => setShowPing(true), 250);
-      setTimeout(() => setShowPing(false), 850);
-      intervalId = setTimeout(loop, 3800);
+      pingOn = setTimeout(() => setShowPing(true), 150);   // Start ping ~150ms in
+      pingOff = setTimeout(() => setShowPing(false), 700); // Stop ping after 550ms
+      intervalId = setTimeout(loop, 2300); // Matches 0.8s + 1.5s delay
     };
 
     loop();
 
-    return () => clearTimeout(intervalId);
+    return () => {
+      clearTimeout(intervalId);
+      clearTimeout(pingOn);
+      clearTimeout(pingOff);
+    };
   }, []);
+
 
   return (
     <motion.div
@@ -38,7 +45,7 @@ const AnimatedCursor = () => {
           times: [0, 0.3, 0.7, 1],
           repeat: Infinity,
           repeatType: 'loop',
-          repeatDelay: 3,
+          repeatDelay: 1.5,
           ease: 'easeInOut',
         }}
         className="relative"

@@ -28,7 +28,7 @@ const Header = () => {
         className="w-full"
         style={{ background: "linear-gradient(275deg, #F55507 4.07%, #E1709E 26.59%, #C87EFF 46.16%, #1C89F8 95.93%)" }}
       >
-        <div className="container">
+        <div className="">
           <p className="text-white text-xs lg:text-base xl:text-lg text-center py-2">
             <div className="overflow-hidden whitespace-nowrap md:hidden">
               <motion.div
