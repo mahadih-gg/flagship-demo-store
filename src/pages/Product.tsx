@@ -1,4 +1,5 @@
 import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { FiChevronRight } from "react-icons/fi";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 const Product = () => {
@@ -23,7 +24,7 @@ const Product = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl text-[#1D1D1F] font-bold pt-11">
+              <h3 className="text-xl md:text-2xl xl:text-xl 2xl:text-2xl text-[#1D1D1F] font-bold pt-11">
                 What's New in iPhone 16
               </h3>
               <EntryPoint
@@ -31,9 +32,14 @@ const Product = () => {
                 skeletonType={EntryPointType.CIRCLE}
                 skeletonSize={EntryPointSize.STANDARD}
               />
-              <div className="hidden lg:block">
-                <h3 className="text-xl text-[#1D1D1F] font-bold pb-5">Learn More About this Device</h3>
-                <p className="text-xs lg:text-sm text-gray-500 font-normal">Monthly payments shown are for customers who qualify to pay $0 Down, $0.00/mo for 36 months after bill credit, was $23.05/mo: 0% APR. Retail price: $829.99. Applicable on any Unlimited phone plan.</p>
+              <div className="hidden md:block pt-6 xl:pt-14 2xl:pt-16">
+                <div className="flex justify-start items-center pb-4 2xl:pb-6 gap-1">
+                  <h3 className="text-xl lg:text-2xl text-[#1D1D1F] font-bold">Learn More About this Device</h3>
+                  <span className="lg:text-2xl pt-2">
+                    <FiChevronRight strokeWidth="2.4" />
+                  </span>
+                </div>
+                <p className="text-xs lg:text-sm text-[#D9E0E5] font-normal">Monthly payments shown are for customers who qualify to pay $0 Down, $0.00/mo for 36 months after bill credit, was $23.05/mo: 0% APR. Retail price: $829.99. Applicable on any Unlimited phone plan.</p>
               </div>
             </div>
           </div>
@@ -45,7 +51,7 @@ const Product = () => {
             <img src="/assets/images/product/sm/2.webp" className="block sm:hidden" alt="" />
 
             <div>
-              <h3 className="text-2xl text-[#1D1D1F] font-bold pt-8 pb-2.5">
+              <h3 className="text-2xl md:text-4xl xl:text-xl 2xl:text-2xl  text-[#1D1D1F] font-bold pt-8 pb-2.5">
                 What People Are Loving
               </h3>
 

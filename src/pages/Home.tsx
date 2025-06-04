@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <main>
       <section className="container">
-        <div className="max-w-[960px] mx-auto flex justify-center items-center pt-2 pb-2 sm:pb-5 md:pb-10">
+        <div className="max-w-[960px] mx-auto flex justify-center items-center pt-2 pb-10 md:pb-6 xl:pb-10 3xl:pb-14">
 
           <img src="/assets/images/home/1.webp" className="hidden 2xl:block" alt="" />
           <img src="/assets/images/home/lg/1.webp" className="hidden lg:block 2xl:hidden" alt="" />

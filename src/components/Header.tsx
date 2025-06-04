@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
 import AnimatedCursor from "./AnimatedCursor";
@@ -29,7 +30,22 @@ const Header = () => {
       >
         <div className="container">
           <p className="text-white text-xs lg:text-base xl:text-lg text-center py-2">
-            This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
+            <div className="overflow-hidden whitespace-nowrap md:hidden">
+              <motion.div
+                animate={{ x: ["100%", "-140%"] }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
+                This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
+              </motion.div>
+            </div>
+
+            <span className="hidden md:block">
+              This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
+            </span>
           </p>
         </div>
       </div>
