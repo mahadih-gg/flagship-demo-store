@@ -29,9 +29,9 @@ const Header = () => {
         style={{ background: "linear-gradient(275deg, #F55507 4.07%, #E1709E 26.59%, #C87EFF 46.16%, #1C89F8 95.93%)" }}
       >
         <div className="">
-          <p className="text-white text-xs lg:text-base xl:text-lg text-center py-2">
+          <div className="text-white text-xs lg:text-base xl:text-lg text-center py-2">
             <div className="overflow-hidden whitespace-nowrap md:hidden">
-              <motion.div
+              <motion.p
                 animate={{ x: ["100%", "-140%"] }}
                 transition={{
                   duration: 10,
@@ -40,13 +40,13 @@ const Header = () => {
                 }}
               >
                 This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
-              </motion.div>
+              </motion.p>
             </div>
 
             <span className="hidden md:block">
               This site is a demo store created exclusively to showcase Horizon Shorts technology. No real products or transactions are available.
             </span>
-          </p>
+          </div>
         </div>
       </div>
       <nav className="container flex justify-between items-center py-8 md:py-11">
