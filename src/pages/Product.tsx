@@ -28,7 +28,7 @@ const Product = () => {
                 What's New in iPhone 16
               </h3>
               <EntryPoint
-                id="#096077"
+                id="#842010"
                 skeletonType={EntryPointType.CIRCLE}
                 skeletonSize={EntryPointSize.STANDARD}
               />
@@ -56,7 +56,7 @@ const Product = () => {
               </h3>
 
               <EntryPoint
-                id="#521882"
+                id="#473811"
                 skeletonType={EntryPointType.RECTANGLE}
                 skeletonSize={EntryPointSize.STANDARD}
               />
@@ -81,7 +81,7 @@ const Product = () => {
         <h2 className="section-heading">You May Also Like These Products</h2>
 
         <EntryPoint
-          id="#095825"
+          id="#252249"
           skeletonType={EntryPointType.RECTANGLE}
           skeletonSize={EntryPointSize.BOLD}
         />
