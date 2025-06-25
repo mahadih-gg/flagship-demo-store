@@ -23,6 +23,7 @@ const Home = () => {
         </div>
       </section>
 
+
       <section className="container section-padding-top">
         <h2 className="section-heading">Don’t Miss These Limited-Time Deals</h2>
         <EntryPoint
