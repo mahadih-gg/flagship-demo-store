@@ -2,7 +2,7 @@
 const EcomNavbar = () => {
   return (
     <nav className="container-ecom h-[64px] lg:h-[54px] 2xl:h-[72px] flex items-center">
-      <div className="hidden md:flex items-center justify-between w-full">
+      <div className="hidden lg:flex items-center justify-between w-full">
         <div className="flex gap-4 2xl:gap-5 text-xs text-[#1F2544] font-medium">
           <a href="#">SHOP</a>
           <a href="#">DEODORANT</a>
@@ -19,7 +19,7 @@ const EcomNavbar = () => {
         </div>
       </div>
 
-      <div className="flex md:hidden items-center justify-between w-full">
+      <div className="flex lg:hidden items-center justify-between w-full">
         <div className="flex gap-6 items-center">
           <button aria-label="Menu">
             <MenuIcon />

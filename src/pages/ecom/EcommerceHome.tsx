@@ -42,7 +42,7 @@ const EcommerceHome = () => {
         <EcomNavbar />
       </header>
 
-      <section className="container-ecom pt-4 md:pt-3 lg:pt-4 2xl:pt-6">
+      <section className="container-ecom pt-0 md:pt-3 lg:pt-4 2xl:pt-6">
         <EntryPoint
           id="#745824"
           skeletonType={EntryPointType.CIRCLE}
@@ -50,7 +50,7 @@ const EcommerceHome = () => {
         />
       </section>
 
-      <section className="container-ecom ecom-section-padding-bottom pt-12 md:pt-10 lg:pt-14 2xl:pt-4">
+      <section className="container-ecom ecom-section-padding-bottom lg:pt-4">
         <ResponsiveImage
           img="1.webp"
           imgFolder="ecom"
@@ -87,7 +87,7 @@ const EcommerceHome = () => {
         </div>
       </section>
       <div className="pl-5 block md:hidden">
-        <img src={`/assets/images/ecom/sm/3.webp`} alt="Ecommerce Order Now" className="w-full" />
+        <img src={`/assets/images/ecom/sm/3.webp`} alt="Ecommerce Order Now" className="w-full pr-5" />
         <img src={`/assets/images/ecom/sm/3(2).webp`} alt="Ecommerce Order Now" className="w-full pt-6" />
       </div>
 
@@ -110,7 +110,7 @@ const EcommerceHome = () => {
         />
       </section>
 
-      <section className="container-ecom ecom-section-padding">
+      <section className="container-ecom ecom-section-padding-bottom pt-3 sm:pt-4 lg:pt-8 2xl:pt-[60px]">
         <ResponsiveImage
           img="5.webp"
           imgFolder="ecom"
