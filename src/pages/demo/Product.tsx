@@ -1,6 +1,7 @@
 import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { FiChevronRight } from "react-icons/fi";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import ResponsiveImage from "../../components/ResponsiveImage";
 
 const Product = () => {
   return (
@@ -45,10 +46,7 @@ const Product = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <img src="/assets/images/product/2.webp" className="hidden 2xl:block" alt="" />
-            <img src="/assets/images/product/lg/2.webp" className="hidden lg:block 2xl:hidden" alt="" />
-            <img src="/assets/images/product/md/2.webp" className="hidden sm:block lg:hidden" alt="" />
-            <img src="/assets/images/product/sm/2.webp" className="block sm:hidden" alt="" />
+            <ResponsiveImage img="2.webp" imgFolder="product" />
 
             <div>
               <h3 className="text-2xl md:text-4xl xl:text-xl 2xl:text-2xl  text-[#1D1D1F] font-bold pt-8 pb-2.5">
@@ -68,10 +66,7 @@ const Product = () => {
 
       <section className="container section-padding">
         <div className="flex justify-center items-center">
-          <img src="/assets/images/product/3.webp" className="hidden 2xl:block" alt="" />
-          <img src="/assets/images/product/lg/3.webp" className="hidden lg:block 2xl:hidden" alt="" />
-          <img src="/assets/images/product/md/3.webp" className="hidden sm:block lg:hidden" alt="" />
-          <img src="/assets/images/product/sm/3.webp" className="block sm:hidden" alt="" />
+          <ResponsiveImage img="3.webp" imgFolder="product" />
         </div>
 
       </section>
@@ -93,10 +88,7 @@ const Product = () => {
         <h2 className="section-heading">Why Buy Online?</h2>
 
         <div className="flex justify-center items-center">
-          <img src="/assets/images/product/4.webp" className="hidden 2xl:block" alt="" />
-          <img src="/assets/images/product/lg/4.webp" className="hidden lg:block 2xl:hidden" alt="" />
-          <img src="/assets/images/product/md/4.webp" className="hidden sm:block lg:hidden" alt="" />
-          <img src="/assets/images/product/sm/4.webp" className="block sm:hidden" alt="" />
+          <ResponsiveImage img="4.webp" imgFolder="product" />
         </div>
 
       </section>

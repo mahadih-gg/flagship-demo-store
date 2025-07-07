@@ -42,12 +42,18 @@
 }
 
 .container {
-  max-width: 1200px;
-  @apply mx-auto px-4;
+  max-width: 1920px;
+  @apply mx-auto px-5 md:px-6 lg:px-11 xl:px-20 2xl:px-[60px];
 }
 
+.container-ecom {
+  max-width: 1920px;
+  @apply mx-auto px-5 md:px-6 lg:px-11 xl:px-20 2xl:px-[60px];
+}
+
+
 .section-padding {
-  @apply pt-12 pb-12 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24 xl:pt-[105px] xl:pb-[105px];
+  @apply py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[105px];
 }
 
 .section-padding-top {
@@ -59,6 +65,24 @@
 }
 
 .section-heading {
+  @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
+  letter-spacing: -3%;
+  line-height: 108%;
+}
+
+.ecom-section-padding {
+  @apply py-[75px] 2xl:py-[100px];
+}
+
+.ecom-section-padding-top {
+  @apply pt-[75px] 2xl:pt-[100px];
+}
+
+.ecom-section-padding-bottom {
+  @apply pb-[75px] 2xl:pb-[100px];
+}
+
+.ecom-section-heading {
   @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
   letter-spacing: -3%;
   line-height: 108%;
