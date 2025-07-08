@@ -21,6 +21,7 @@ const ResponsiveImage = ({ img, imgFolder = "", className = "", alt = "" }: Prop
               className={`hidden 2xl:block ${className}`}
               alt={alt}
               loading="lazy"
+              decoding="async"
             />
           }
           {width >= 1024 && width < 1536 &&
@@ -29,6 +30,7 @@ const ResponsiveImage = ({ img, imgFolder = "", className = "", alt = "" }: Prop
               className={`hidden lg:block 2xl:hidden ${className}`}
               alt={alt}
               loading="lazy"
+              decoding="async"
             />
           }
           {width >= 640 && width < 1024 &&
@@ -37,6 +39,7 @@ const ResponsiveImage = ({ img, imgFolder = "", className = "", alt = "" }: Prop
               className={`hidden sm:block lg:hidden ${className}`}
               alt={alt}
               loading="lazy"
+              decoding="async"
             />
           }
           {width < 640 &&
@@ -45,6 +48,7 @@ const ResponsiveImage = ({ img, imgFolder = "", className = "", alt = "" }: Prop
               className={`block sm:hidden ${className}`}
               alt={alt}
               loading="lazy"
+              decoding="async"
             />
           }
         </>

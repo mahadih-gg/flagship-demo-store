@@ -1,9 +1,11 @@
 // vite.config.ts
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import { imagetools } from 'vite-imagetools';
+
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), imagetools()],
   build: {
     outDir: 'dist',
   },
