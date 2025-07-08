@@ -41,31 +41,38 @@
   box-sizing: border-box;
 }
 
-.container {
+/* ============== Telco Styles =============== */
+
+.telco-wrapper {}
+
+.telco-container {
   max-width: 1920px;
-  @apply mx-auto px-5 md:px-6 lg:px-11 xl:px-20 2xl:px-[60px];
+  @apply mx-auto px-5 md:px-10 lg:px-[120px] 2xl:px-[159px];
 }
 
-.container-ecom {
+.telco-section-padding {
+  @apply py-[60px] md:py-[50px] lg:py-[75px] xl:py-[100px];
+}
+
+.telco-section-padding-top {
+  @apply pt-[60px] md:pt-[50px] lg:pt-[75px] xl:pt-[100px];
+}
+
+.telco-section-padding-bottom {
+  @apply pb-[60px] md:pb-[50px] lg:pb-[75px] xl:pb-[105px];
+}
+
+.telco-section-heading {
+  @apply text-[#15234E] font-bold text-[24px] 2xl:text-[34px];
+}
+
+
+/* ============== Ecom Styles =============== */
+
+.ecom-wrapper {}
+
+.ecom-container {
   @apply max-w-[1920px] mx-auto px-5 md:px-6 xl:px-[44px] 2xl:px-[60px];
-}
-
-.section-padding {
-  @apply py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[105px];
-}
-
-.section-padding-top {
-  @apply pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-[105px];
-}
-
-.section-padding-bottom {
-  @apply pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[105px];
-}
-
-.section-heading {
-  @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
-  letter-spacing: -3%;
-  line-height: 108%;
 }
 
 .ecom-section-padding {

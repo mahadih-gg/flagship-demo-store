@@ -1,28 +1,21 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
-import DemoStoreLayout from './layouts/DemoStoreLayout'
-import EcommerceLayout from './layouts/EcommerceLayout'
-
-import Home from './pages/demo/Home'
-import Product from './pages/demo/Product'
-
-import EcommerceHome from './pages/ecom/EcommerceHome'
+import DefaultLayout from './layouts/DefaultLayout'
+import EcomHome from './pages/ecom/EcomHome'
+import TelcoHome from './pages/telco/TelcoHome'
 
 function App() {
 
   return (
     <>
       <Routes>
-        <Route element={<DemoStoreLayout />}>
+        <Route element={<DefaultLayout />}>
           <Route path="/" element={
-            <Home />
-          } />
-          <Route path="/product" element={
-            <Product />
+            <TelcoHome />
           } />
         </Route>
-        <Route element={<EcommerceLayout />}>
-          <Route path="/ecom" element={<EcommerceHome />} />
+        <Route element={<DefaultLayout />}>
+          <Route path="/ecom" element={<EcomHome />} />
         </Route>
       </Routes>
     </>
