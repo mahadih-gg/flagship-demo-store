@@ -3,21 +3,17 @@ interface PropsType {
   img: string;
   imgFolder?: string;
   className?: string;
-  smClassName?: string;
-  mdClassName?: string;
-  lgClassName?: string;
+  alt?: string;
 }
 
-
-const ResponsiveImage = ({ img, imgFolder = "", className = "", smClassName = "", mdClassName = "", lgClassName = "" }: PropsType) => {
-
+const ResponsiveImage = ({ img, imgFolder = "", className = "", alt = "" }: PropsType) => {
   return (
-    <div>
-      <img src={`/assets/images/${imgFolder}/${img}`} className={`hidden 3xl:block ${className}`} alt="" />
-      <img src={`/assets/images/${imgFolder}/lg/${img}`} className={`hidden 2xl:block 3xl:hidden ${lgClassName}`} alt="" />
-      <img src={`/assets/images/${imgFolder}/lg/${img}`} className={`hidden sm:block 2xl:hidden ${mdClassName}`} alt="" />
-      <img src={`/assets/images/${imgFolder}/sm/${img}`} className={`block sm:hidden ${smClassName}`} alt="" />
-    </div>
+    <>
+      <img src={`/assets/images/${imgFolder}/${img}`} className={`hidden 2xl:block ${className}`} alt={alt} />
+      <img src={`/assets/images/${imgFolder}/lg/${img}`} className={`hidden lg:block 2xl:hidden ${className}`} alt={alt} />
+      <img src={`/assets/images/${imgFolder}/md/${img}`} className={`hidden sm:block lg:hidden ${className}`} alt={alt} />
+      <img src={`/assets/images/${imgFolder}/sm/${img}`} className={`block sm:hidden ${className}`} alt={alt} />
+    </>
   );
 };
 
