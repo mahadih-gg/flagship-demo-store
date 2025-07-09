@@ -41,6 +41,29 @@
   box-sizing: border-box;
 }
 
+/* ============== Demo Styles =============== */
+.demo-container {
+  @apply container mx-auto px-4;
+}
+
+.demo-section-padding {
+  @apply pt-12 pb-12 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24 xl:pt-[105px] xl:pb-[105px];
+}
+
+.demo-section-padding-top {
+  @apply pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-[105px];
+}
+
+.demo-section-padding-bottom {
+  @apply pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[105px];
+}
+
+.demo-section-heading {
+  @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
+  letter-spacing: -3%;
+  line-height: 108%;
+}
+
 /* ============== Telco Styles =============== */
 
 .telco-wrapper {}
