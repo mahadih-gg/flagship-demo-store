@@ -22,7 +22,7 @@ const EcommerceHome = () => {
   ];
 
   return (
-    <main>
+    <main className="ecom-wrapper">
       <header>
         <BlueTopBar containerClass="ecom-container" />
         <Marquee

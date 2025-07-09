@@ -34,11 +34,100 @@
   font-style: normal;
 }
 
+/* Helvetica Neue Font Declarations */
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueBlack.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/font/helvetica-neue/HelveticaNeueHeavy.otf") format("opentype");
+  font-weight: 950;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Neue Plak";
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ============== Landing Styles =============== */
+
+.landing-wrapper {
+  font-family: "Helvetica Neue";
+}
+
+.landing-container {
+  @apply mx-auto px-4 md:px-5 lg:px-10 xl:px-[90px] 3xl:px-[120px];
+}
+
+.landing-container-left {
+  @apply mx-auto pl-4 md:pl-5 lg:pl-10 xl:pl-[90px] 3xl:pl-[120px];
+}
+
+.landing-section-padding {
+  @apply py-10 md:py-[100px] lg:py-[180px] xl:py-[240px];
+}
+
+.landing-section-padding-top {
+  @apply pt-10 md:pt-[100px] lg:pt-[180px] xl:pt-[240px];
+}
+
+.landing-section-padding-bottom {
+  @apply pb-10 md:pb-[100px] lg:pb-[180px] xl:pb-[240px];
+}
+
+.landing-section-heading {
+  @apply text-[#15234E] font-medium text-center text-[32px] lg:text-[48px] 3xl:text-[64px];
+  letter-spacing: -3%;
+  line-height: 108%;
+}
+
+.landing-section-description {
+  @apply text-[#475467] text-center text-base md:text-xl 3xl:text-2xl pt-[18px] 3xl:pt-6;
+  letter-spacing: -3%;
+  line-height: 108%;
 }
 
 /* ============== Demo Styles =============== */
@@ -66,7 +155,9 @@
 
 /* ============== Telco Styles =============== */
 
-.telco-wrapper {}
+.telco-wrapper {
+  font-family: "Neue Plak";
+}
 
 .telco-container {
   max-width: 1920px;
@@ -92,7 +183,9 @@
 
 /* ============== Ecom Styles =============== */
 
-.ecom-wrapper {}
+.ecom-wrapper {
+  font-family: "Neue Plak";
+}
 
 .ecom-container {
   @apply max-w-[1920px] mx-auto px-5 md:px-6 xl:px-[44px] 2xl:px-[60px];
