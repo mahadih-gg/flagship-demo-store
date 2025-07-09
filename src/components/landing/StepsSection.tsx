@@ -77,7 +77,7 @@ const StepsSection = () => {
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                ref={el => (stepRefs.current[idx] = el)}
+                ref={(el) => { stepRefs.current[idx] = el; }}
                 className={`py-[18px] 3xl:py-6 cursor-pointer`}
                 onClick={() => setActiveStep(idx)}
               >
