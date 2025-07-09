@@ -2,7 +2,7 @@ import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-s
 
 const EntryPointSection = () => {
   return (
-    <section className="landing-container landing-section-padding">
+    <section className="landing-container-left pr-4 md:pr-0 landing-section-padding">
       <h2 className="landing-section-heading">Short-form video platform for ecommerce</h2>
       <p className="landing-section-description pb-10 md:pb-9 2xl:pb-10">
         Click below to see for yourself why Horizon leads the industry in short-form video engagement.

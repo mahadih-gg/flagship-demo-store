@@ -18,7 +18,7 @@ const variantStyles = {
 };
 
 const sizeStyles = {
-  default: "h-12 2xl:h-16 px-6 text-lg rounded-lg",
+  default: "h-12 2xl:h-16 px-2 md:px-6 text-lg rounded-lg",
   xl: "h-12 lg:h-14 2xl:h-[76px] px-2 md:px-5 2xl:px-7 text-base 2xl:text-xl rounded-none",
 };
 

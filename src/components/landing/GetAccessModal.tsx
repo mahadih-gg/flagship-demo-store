@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Button from "../ui/Button";
 
 const inputClass =
-  "w-full h-[45px] 2xl:h-[60px] px-4 text-lg rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0065FF] font-helvetica-neue transition-all duration-200";
+  "w-full h-[45px] 3xl:h-[60px] px-4 text-lg rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0065FF] font-helvetica-neue transition-all duration-200";
 
 const GetAccessModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) => {
   return (
