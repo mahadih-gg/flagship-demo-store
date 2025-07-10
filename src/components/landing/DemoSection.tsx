@@ -25,12 +25,12 @@ const DemoSection = () => {
 
       <div
         ref={containerRef}
-        className="relative w-full md:w-3/4 aspect-video rounded-2xl mx-auto overflow-hidden"
+        className="relative w-full md:w-3/4 aspect-[16/9] rounded-2xl mx-auto overflow-hidden [contain:strict]"
       >
         <video
           ref={videoRef}
           src="/assets/videos/demo.webm"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-[1.001] [transform:translateZ(0)] [backface-visibility:hidden] will-change-transform"
           muted
           loop
           playsInline
