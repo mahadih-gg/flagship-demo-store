@@ -49,20 +49,20 @@ const StepsSection = () => {
   }, [activeStep]);
 
   return (
-    <section className="landing-container-left landing-section-padding-bottom">
+    <section className="landing-container-left pb-[60px] md:pb-[100px] lg:pb-[180px] xl:pb-[240px]">
       <h2 className="landing-section-heading pr-4 md:pr-5 lg:pr-0">
         When approved, start in 4 easy steps
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] pt-10 md:pt-16 3xl:pt-[80px]">
-        <div className="relative pr-4 md:pr-5 lg:pr-0">
+      <div className="flex flex-col lg:flex-row gap-10 md:gap-[60px] 3xl:gap-[80px] pt-10 md:pt-16 3xl:pt-[80px]">
+        <div className="relative pr-4 md:pr-5 lg:pr-0 w-full lg:w-[44%]">
           {/* Step Indicator Bar */}
-          <div className="absolute left-0 top-0 h-full flex flex-col items-center" style={{ width: 24, height: stepContainerHeight }}>
+          <div className="absolute -left-2 md:left-0 top-0 h-full flex flex-col items-center" style={{ width: 24, height: stepContainerHeight }}>
             {/* Bar background */}
-            <div className="relative h-full w-1 bg-[#F5F7FB] rounded">
+            <div className="relative h-full w-[3px] md:w-1 bg-[#F5F7FB] rounded">
               {/* Animated active bar */}
               <motion.div
-                className="absolute left-0 w-1 bg-[#0066FF] rounded"
+                className="absolute left-0 w-[3px] md:w-1 bg-[#0066FF] rounded"
                 initial={false}
                 animate={{
                   top: barStyle.top,
@@ -73,7 +73,7 @@ const StepsSection = () => {
             </div>
           </div>
           {/* Steps */}
-          <div ref={stepContainerRef} className="pl-8 3xl:pl-11 flex flex-col">
+          <div ref={stepContainerRef} className="pl-6 md:pl-8 3xl:pl-11 flex flex-col">
             {steps.map((step, idx) => (
               <div
                 key={idx}
@@ -81,19 +81,19 @@ const StepsSection = () => {
                 className={`py-[18px] 3xl:py-6 cursor-pointer`}
                 onClick={() => setActiveStep(idx)}
               >
-                <h3 className="text-[18px] 3xl:text-2xl font-medium text-[#1F2544] mb-2">{step.title}</h3>
-                <p className="text-[#475467] text-base 3xl:text-xl">{step.description}</p>
+                <h3 className="text-lg 3xl:text-2xl font-medium text-[#1F2544] mb-[6px] 3xl:mb-2">{step.title}</h3>
+                <p className="text-base 3xl:text-xl leading-[24px] 3xl:leading-[32px] text-[#475467]">{step.description}</p>
               </div>
             ))}
           </div>
-          <div className="pl-8 mt-10">
+          <div className="pl-0 md:pl-8 mt-5 3xl:mt-10">
             <Button className="w-full" onClick={() => setIsModalOpen(true)}>
               Request Early Access
             </Button>
           </div>
         </div>
-        <div className="w-full h-full overflow-hidden">
-          <img src="/assets/images/landing/step-1.webp" alt="Steps" className="w-auto h-full object-cover object-left" />
+        <div className="w-full lg:w-[56%] h-full overflow-hidden">
+          <img src="/assets/images/landing/step-1.webp" alt="Steps" className="w-auto h-[350px] md:h-full object-cover object-left" />
         </div>
       </div>
 

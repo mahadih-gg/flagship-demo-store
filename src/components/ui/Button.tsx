@@ -1,3 +1,4 @@
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { cn } from "../../utils";
 
 type ButtonProps = {
@@ -14,12 +15,12 @@ const variantStyles = {
   default:
     "bg-[#0065FF] text-white border border-[#0065FF] hover:bg-[#0052CC]",
   ghost:
-    "bg-transparent text-[#0052CC] underline",
+    "bg-transparent text-[#0052CC] font-normal text-base 3xl:text-xl underline",
 };
 
 const sizeStyles = {
-  default: "h-12 2xl:h-16 px-2 md:px-6 text-lg rounded-lg",
-  xl: "h-12 lg:h-14 2xl:h-[76px] px-2 md:px-5 2xl:px-7 text-base 2xl:text-xl rounded-none",
+  default: "h-12 2xl:h-16 px-2 xl:px-5 3xl:px-9 text-base 3xl:text-lg rounded-lg",
+  xl: "h-12 lg:h-14 2xl:h-[76px] px-2 md:px-9 2xl:px-[52px] text-base 2xl:text-xl rounded-none",
 };
 
 const Button = ({
@@ -38,7 +39,7 @@ const Button = ({
       <a
         href={link}
         className={cn(
-          "inline-flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed font-helvetica-neue",
+          "inline-flex items-center justify-center transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-helvetica-neue",
           variantStyles[variant],
           sizeStyles[size],
           className
@@ -54,7 +55,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        "inline-flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed font-helvetica-neue",
+        "inline-flex items-center justify-center transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-helvetica-neue",
         variantStyles[variant],
         sizeStyles[size],
         className
@@ -62,9 +63,13 @@ const Button = ({
       disabled={isLoading || props.disabled}
       {...props}
     >
-      {isLoading ? <span className="mr-2">Loading...</span> : null}
       {children}
       {icon && <span className="ml-2 2xl:ml-2.5">{icon}</span>}
+      {isLoading ? (
+        <span className="ml-2">
+          <AiOutlineLoading3Quarters className="animate-spin" />
+        </span>
+      ) : null}
     </button>
   );
 };

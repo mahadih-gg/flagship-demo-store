@@ -9,7 +9,7 @@ const EntryPointSection = () => {
       </p>
 
       <EntryPoint
-        id="#774540"
+        id="#897749"
         skeletonType={EntryPointType.RECTANGLE}
         skeletonSize={EntryPointSize.BOLD}
       />

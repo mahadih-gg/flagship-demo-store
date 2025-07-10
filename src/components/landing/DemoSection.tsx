@@ -1,4 +1,21 @@
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
 const DemoSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, {
+    once: false,
+    amount: 0.3 // Trigger when 30% of the video is visible
+  });
+
+  // Play/pause video based on visibility
+  if (isInView && videoRef.current?.paused) {
+    videoRef.current.play();
+  } else if (!isInView && videoRef.current && !videoRef.current.paused) {
+    videoRef.current.pause();
+  }
+
   return (
     <section className="landing-container landing-section-padding-top">
       <h2 id="demo-section" className="landing-section-heading">Watch a demo of Horizon</h2>
@@ -6,8 +23,18 @@ const DemoSection = () => {
         Watch a short demo of our beta product
       </p>
 
-      <div className="bg-gray-100 w-full md:w-3/4 aspect-video rounded-2xl mx-auto">
-        {/* Demo video placeholder */}
+      <div
+        ref={containerRef}
+        className="relative w-full md:w-3/4 aspect-video rounded-2xl mx-auto overflow-hidden"
+      >
+        <video
+          ref={videoRef}
+          src="/assets/videos/demo.webm"
+          className="w-full h-full object-cover"
+          muted
+          loop
+          playsInline
+        />
       </div>
     </section>
   );

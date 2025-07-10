@@ -9,12 +9,12 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <header className="landing-container">
+    <header className="landing-container pt-5 md:pt-0">
       <div className="flex justify-between items-center">
         <Link to="/">
           <HorizonLogo />
         </Link>
-        <div className='flex items-center gap-6 2xl:gap-8'>
+        <div className='flex items-center gap-6 lg:gap-2'>
           <Button
             link='#demo-section'
             variant='ghost'

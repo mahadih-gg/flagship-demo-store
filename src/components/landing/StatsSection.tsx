@@ -30,8 +30,8 @@ const statsData = [
 const StatsSection = () => {
   return (
     <section className="landing-container">
-      <h2 className="landing-section-heading">Still not using the best growth asset on your site?</h2>
-      <p className="landing-section-description pb-10 md:pb-11 2xl:pb-[60px]">
+      <h2 className="landing-section-heading max-w-[400px] lg:max-w-[100%] mx-auto">Still not using the best growth asset on your site?</h2>
+      <p className="landing-section-description pb-10 md:pb-11 2xl:pb-[60px] max-w-[450px] lg:max-w-[100%] mx-auto">
         Today's shoppers already spend most of their screen time watching short-form videos.
       </p>
 
@@ -42,7 +42,7 @@ const StatsSection = () => {
               <Counter to={stat.value} suffix={stat.suffix} />
             </div>
             <h3 className="font-medium text-[18px] 3xl:text-2xl text-[#1F2544] mb-2 3xl:mb-2.5">{stat.title}</h3>
-            <p className="text-[#475467] text-base 3xl:text-xl">{stat.description}</p>
+            <p className="text-[#475467] text-base 3xl:text-xl max-w-[220px] 3xl:max-w-[275px] mx-auto">{stat.description}</p>
           </div>
         ))}
       </div>
