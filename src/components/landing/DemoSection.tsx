@@ -30,7 +30,15 @@ const DemoSection = () => {
         <video
           ref={videoRef}
           src="/assets/videos/demo.webm"
-          className="w-full h-full object-cover scale-[1.001] [transform:translateZ(0)] [backface-visibility:hidden] will-change-transform"
+          className="absolute inset-0 w-full rounded-2xl h-full object-cover 
+    [transform:translateZ(0)] 
+    [backface-visibility:hidden] 
+    will-change-transform 
+    [display:block]"
+          style={{
+            outline: "4px solid white",
+            outlineOffset: "-2px",
+          }}
           muted
           loop
           playsInline
