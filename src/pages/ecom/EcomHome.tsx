@@ -1,4 +1,5 @@
 import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { Link } from "react-router";
 import BlueTopBar from "../../components/BlueTopBar";
 import EcomHeader from "../../components/ecom/EcomHeader";
 import EcomNavbar from "../../components/ecom/EcomNavbar";
@@ -21,7 +22,10 @@ const EcommerceHome = () => {
   return (
     <main className="ecom-wrapper">
       <header>
-        <BlueTopBar containerClass="ecom-container" />
+        <BlueTopBar containerClass="ecom-container">
+          Powered by Horizon • {" "}
+          <Link to="/free-trial" className="underline">Sign up for Free Trial</Link>
+        </BlueTopBar>
         <Marquee
           className="text-[#98A1BC] text-xs uppercase py-3 md:pt-4 2xl:pt-5"
           pauseOnHover={true}

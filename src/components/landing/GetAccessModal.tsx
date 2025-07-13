@@ -26,15 +26,25 @@ const GetAccessModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
 
   const onSubmit = async (data: FormData) => {
     try {
-      // Simulate API call
-      console.log("Form data:", data);
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/mqalzppd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      // Reset form and close modal on success
-      reset();
-      onClose();
+      if (response.ok) {
+        // Reset form and close modal on success
+        reset();
+        onClose();
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
+      // You might want to show an error message to the user here
     }
   };
 

@@ -13,14 +13,14 @@ type ButtonProps = {
 
 const variantStyles = {
   default:
-    "bg-[#0065FF] text-white border border-[#0065FF] hover:bg-[#0052CC]",
+    "bg-[#0065FF] text-white border font-normal border-[#0065FF] hover:bg-[#0052CC]",
   ghost:
-    "bg-transparent text-[#0052CC] font-normal text-base 3xl:text-xl underline",
+    "bg-transparent text-[#0052CC] font-normal text-base 2xl:text-xl underline",
 };
 
 const sizeStyles = {
-  default: "h-12 2xl:h-16 px-2 xl:px-5 3xl:px-9 text-base 3xl:text-lg rounded-lg",
-  xl: "h-12 lg:h-14 2xl:h-[76px] px-2 md:px-9 2xl:px-[52px] text-base 2xl:text-xl rounded-none",
+  default: "h-12 2xl:h-16 px-[18px] xl:px-5 3xl:px-9 text-base 2xl:text-xl rounded-lg",
+  xl: "h-12 lg:h-14 2xl:h-[76px] px-[18px] md:px-9 2xl:px-[52px] text-base 2xl:text-xl rounded-none",
 };
 
 const Button = ({

@@ -4,11 +4,11 @@ import DemoHeader from '../components/demo/DemoHeader';
 
 const DemoLayout = () => {
   return (
-    <>
+    <main className="demo-wrapper">
       <DemoHeader />
       <Outlet />
       <DemoFooter />
-    </>
+    </main>
   );
 };
 

@@ -24,7 +24,7 @@ const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="landing-container-left flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-14 pt-[60px] md:pt-[90px] 3xl:pt-[120px]">
+    <section className="landing-container-left flex flex-col lg:flex-row items-start justify-between pt-[60px] md:pt-[90px] 3xl:pt-[120px] overflow-visible">
       {/* Left: Hero Text and List */}
       <div className="w-full lg:w-[56%] -ml-0.5 pt-4 pr-4 md:pr-5 lg:pr-0">
         <h1
@@ -40,14 +40,14 @@ const HeroSection = () => {
           {heroList.map((item, idx) => (
             <li
               key={idx}
-              className="flex items-start lg:items-center text-[#475467] font-helvetica-neue text-base md:text-lg 3xl:text-2xl leading-[24px] md:leading-[34px] 3xl:leading-[30px]"
+              className="flex items-start sm:items-center text-[#475467] font-helvetica-neue text-base md:text-lg 3xl:text-2xl leading-[24px] md:leading-[32px] 3xl:leading-[30px]"
             >
               <span className="mr-2 2xl:mr-3"><BlueCheckIcon /></span>
               {item}
             </li>
           ))}
         </ul>
-        <div className="flex items-center py-10 md:py-8 3xl:py-10 gap-6 lg:gap-0">
+        <div className="flex items-center py-10 md:py-8 3xl:py-12 gap-2 md:gap-0">
           <Button onClick={() => setIsModalOpen(true)}>Request Early Access</Button>
           <Button
             variant="ghost"
@@ -68,15 +68,12 @@ const HeroSection = () => {
       </div>
 
       {/* Right: Hero Image */}
-      <div className="hidden lg:block relative w-full lg:w-[40%] xl:w-[50%] 3xl:w-[48%] ml-auto">
+      <div className="hidden lg:block flex-1 w-full lg:w-[40%] xl:w-[50%] 3xl:w-[48%] -ml-[109px] 2xl:-ml-[137px] z-10">
         <img
           src="/assets/images/landing/hero.webp"
           alt="Landing Hero"
-          className="hidden lg:block w-auto h-[600px] 2xl:w-full 2xl:h-auto object-cover object-left"
+          className="w-auto h-[560px] 2xl:h-[746px] object-cover object-left"
         />
-        <div className="hidden lg:block absolute -bottom-6 3xl:-bottom-8 -left-[50px] xl:-left-[100px] 3xl:-left-[134px]">
-          <img src="/assets/images/landing/hero-short.webp" alt="Landing Hero" className="w-[202px] 3xl:w-[270px] h-auto" />
-        </div>
       </div>
 
 

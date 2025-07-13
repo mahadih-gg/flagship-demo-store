@@ -131,8 +131,13 @@
 }
 
 /* ============== Demo Styles =============== */
+
+.demo-wrapper {
+  font-family: "Neue Plak";
+}
+
 .demo-container {
-  @apply container mx-auto px-4;
+  @apply max-w-[1920px] mx-auto px-4 md:px-[70px] lg:px-[132px] 2xl:px-[176px];
 }
 
 .demo-section-padding {
@@ -160,8 +165,7 @@
 }
 
 .telco-container {
-  max-width: 1920px;
-  @apply mx-auto px-5 md:px-10 lg:px-[120px] 2xl:px-[159px];
+  @apply max-w-[1920px] mx-auto px-5 md:px-10 lg:px-[120px] 2xl:px-[159px];
 }
 
 .telco-section-padding {

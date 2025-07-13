@@ -3,7 +3,7 @@ import ResponsiveImage from "../../components/ResponsiveImage";
 
 const DemoHome = () => {
   return (
-    <main>
+    <>
       <section className="demo-container">
         <div className="max-w-[960px] mx-auto flex justify-center items-center pt-2 pb-10 md:pb-6 xl:pb-10 3xl:pb-14">
 
@@ -95,7 +95,7 @@ const DemoHome = () => {
         </div>
 
       </section>
-    </main>
+    </>
   );
 };
 

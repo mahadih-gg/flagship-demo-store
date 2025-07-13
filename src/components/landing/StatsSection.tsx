@@ -31,7 +31,7 @@ const StatsSection = () => {
   return (
     <section className="landing-container">
       <h2 className="landing-section-heading max-w-[400px] lg:max-w-[100%] mx-auto">Still not using the best growth asset on your site?</h2>
-      <p className="landing-section-description pb-10 md:pb-11 2xl:pb-[60px] max-w-[450px] lg:max-w-[100%] mx-auto">
+      <p className="landing-section-description mb-10 md:mb-11 2xl:mb-[60px] max-w-[450px] lg:max-w-[100%] mx-auto">
         Today's shoppers already spend most of their screen time watching short-form videos.
       </p>
 
