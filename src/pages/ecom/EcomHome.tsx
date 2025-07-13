@@ -8,17 +8,14 @@ import { Marquee } from "../../components/ui/Marquee";
 const EcommerceHome = () => {
   // Dynamic marquee text data - easily modifiable
   const marqueeTexts = [
-    "New → Body Wash Discovery Set",
+    "This is a demo of Horizon VIDEO SaaS platform",
     "━",
-    "FREE GIFT ON ORDERS $65+",
+    "Content used is for demo purposes only",
     "━",
-    "FREE SHIPPING ON ORDERS $50+",
+    "All copyrights belong to their respective brands",
     "━",
-    "Subscribe & Save 15%",
+    "Ecommerce features are for demonstration purposes only",
     "━",
-    "New → Body Wash Discovery Set",
-    "━",
-    "FREE GIFT ON ORDERS $65+"
   ];
 
   return (
@@ -99,7 +96,7 @@ const EcommerceHome = () => {
       </section>
 
       <section className="ecom-container">
-        <EcomHeader title="User Stories" />
+        <EcomHeader title="User Stories" className="pb-6 lg:pb-2 2xl:pb-[60px]" />
         <EntryPoint
           id="#907569"
           skeletonType={EntryPointType.CIRCLE}
