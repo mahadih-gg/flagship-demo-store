@@ -24,7 +24,7 @@ const EcommerceHome = () => {
       <header>
         <BlueTopBar containerClass="ecom-container">
           Powered by Horizon • {" "}
-          <Link to="/free-trial" className="underline">Sign up for Free Trial</Link>
+          <Link to="/free-trial" className="underline">Request for Free Trial</Link>
         </BlueTopBar>
         <Marquee
           className="text-[#98A1BC] text-xs uppercase py-3 md:pt-4 2xl:pt-5"
