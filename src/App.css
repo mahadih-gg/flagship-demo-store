@@ -38,35 +38,35 @@
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Regular.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Light.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-SemiBold.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Bold.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Black.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -119,6 +119,42 @@
   font-family: "Helvetica Neue";
   src: url("/assets/font/helvetica-neue/HelveticaNeueHeavy.otf") format("opentype");
   font-weight: 950;
+  font-style: normal;
+}
+
+/* TWKLausanne Font Declarations */
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-800.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -225,11 +261,12 @@
 /* ============== Ecom Styles =============== */
 
 .ecom-wrapper {
-  font-family: "Neue Plak";
+  font-family: "TWKLausanne";
 }
 
 .ecom-container {
   @apply max-w-[1920px] mx-auto px-5 md:px-6 xl:px-[44px] 2xl:px-[60px];
+  font-family: "TWKLausanne";
 }
 
 .ecom-section-padding {
@@ -248,4 +285,5 @@
   @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
   letter-spacing: -3%;
   line-height: 108%;
+  font-family: "TWKLausanne";
 }
