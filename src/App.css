@@ -1,35 +1,72 @@
 /* Custom Font Declarations */
+
+/* Aeonik Font Declarations */
+@font-face {
+  font-family: "Aeonik";
+  src: url("/assets/font/Aeonik/fonnts.com-Aeonik_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/assets/font/Aeonik/fonnts.com-Aeonik_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/assets/font/Aeonik/Aeonik-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/assets/font/Aeonik/fonnts.com-Aeonik_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/assets/font/Aeonik/fonnts.com-Aeonik_Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Regular.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Light.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-SemiBold.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Bold.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Plak";
-  src: url("/assets/font/NeuePlak-Black.ttf") format("truetype");
+  src: url("/assets/font/NeuePlak/NeuePlak-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -82,6 +119,42 @@
   font-family: "Helvetica Neue";
   src: url("/assets/font/helvetica-neue/HelveticaNeueHeavy.otf") format("opentype");
   font-weight: 950;
+  font-style: normal;
+}
+
+/* TWKLausanne Font Declarations */
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/assets/font/TWKLausanne/TWKLausanne-800.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -161,7 +234,7 @@
 /* ============== Telco Styles =============== */
 
 .telco-wrapper {
-  font-family: "Neue Plak";
+  font-family: "Aeonik";
 }
 
 .telco-container {
@@ -169,30 +242,31 @@
 }
 
 .telco-section-padding {
-  @apply py-[60px] md:py-[50px] lg:py-[75px] xl:py-[100px];
+  @apply py-[90px] md:py-[70px] lg:py-[75px] 2xl:py-[100px];
 }
 
 .telco-section-padding-top {
-  @apply pt-[60px] md:pt-[50px] lg:pt-[75px] xl:pt-[100px];
+  @apply pt-[90px] md:pt-[70px] lg:pt-[75px] 2xl:pt-[100px];
 }
 
 .telco-section-padding-bottom {
-  @apply pb-[60px] md:pb-[50px] lg:pb-[75px] xl:pb-[105px];
+  @apply pb-[90px] md:pb-[70px] lg:pb-[75px] 2xl:pb-[100px];
 }
 
 .telco-section-heading {
-  @apply text-[#15234E] font-bold text-[24px] 2xl:text-[34px];
+  @apply text-[#15234E] font-bold text-[26px] lg:text-[30px] 2xl:text-[40px] leading-[32px] sm:leading-[38px] lg:leading-[34px] 2xl:leading-[48px];
 }
 
 
 /* ============== Ecom Styles =============== */
 
 .ecom-wrapper {
-  font-family: "Neue Plak";
+  font-family: "TWKLausanne";
 }
 
 .ecom-container {
   @apply max-w-[1920px] mx-auto px-5 md:px-6 xl:px-[44px] 2xl:px-[60px];
+  font-family: "TWKLausanne";
 }
 
 .ecom-section-padding {
@@ -211,4 +285,5 @@
   @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
   letter-spacing: -3%;
   line-height: 108%;
+  font-family: "TWKLausanne";
 }
