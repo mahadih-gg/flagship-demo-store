@@ -26,11 +26,11 @@ const HeroSection = () => {
   return (
     <section className="landing-container-left flex flex-col lg:flex-row items-start justify-between pt-[60px] md:pt-[90px] 3xl:pt-[120px] overflow-visible">
       {/* Left: Hero Text and List */}
-      <div className="w-full lg:w-[56%] -ml-0.5 pt-4 pr-4 md:pr-5 lg:pr-0">
+      <div className="w-full lg:w-[57%] xl:w-[58%] 2xl:w-[56%] -ml-0.5 pt-4 pr-4 md:pr-5 lg:pr-0">
         <h1
-          className="text-[#1F2544] font-helvetica-neue font-medium text-[48px] md:text-[48px] xl:text-[60px] 3xl:text-[80px] leading-[46px] md:leading-[70px] 3xl:leading-[92px] tracking-[-0.8px] xl:tracking-[-1.6px]"
+          className="text-[#1F2544] font-helvetica-neue font-medium text-[48px] md:text-[48px] xl:text-[60px] 3xl:text-[80px] leading-[46px] md:leading-[50px] xl:leading-[70px] 3xl:leading-[92px] tracking-[-0.8px] xl:tracking-[-1.6px]"
         >
-          Launch short-form videos <br className="hidden lg:block" /> on your online store
+          Launch short-form <br className="block sm:hidden" /> videos <br className="hidden md:block" /> on your online store
         </h1>
 
         <img src="/assets/images/landing/hero-short-lg.webp" alt="Landing Hero" className="block lg:hidden pt-10 w-[calc(100%+100px)] sm:w-auto h-[410px] sm:h-auto object-cover object-left" />
@@ -68,11 +68,11 @@ const HeroSection = () => {
       </div>
 
       {/* Right: Hero Image */}
-      <div className="hidden lg:block flex-1 w-full lg:w-[40%] xl:w-[50%] 3xl:w-[48%] -ml-[109px] 2xl:-ml-[137px] z-10">
+      <div className="hidden lg:block flex-1 w-full lg:w-[40%] xl:w-[50%] 3xl:w-[48%] -ml-[00px] xl:-ml-[109px] 2xl:-ml-[137px] z-10">
         <img
           src="/assets/images/landing/hero.webp"
           alt="Landing Hero"
-          className="w-auto h-[560px] 2xl:h-[746px] object-cover object-left"
+          className="w-auto h-[560px] 3xl:h-[746px] object-cover object-left"
         />
       </div>
 

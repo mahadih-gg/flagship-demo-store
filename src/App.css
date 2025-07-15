@@ -242,15 +242,15 @@
 }
 
 .telco-section-padding {
-  @apply py-[90px] md:py-[70px] lg:py-[75px] 2xl:py-[100px];
+  @apply py-[60px] md:py-[50px] lg:py-[75px] 2xl:py-[100px];
 }
 
 .telco-section-padding-top {
-  @apply pt-[90px] md:pt-[70px] lg:pt-[75px] 2xl:pt-[100px];
+  @apply pt-[60px] md:pt-[50px] lg:pt-[75px] 2xl:pt-[100px];
 }
 
 .telco-section-padding-bottom {
-  @apply pb-[90px] md:pb-[70px] lg:pb-[75px] 2xl:pb-[100px];
+  @apply pb-[60px] md:pb-[50px] lg:pb-[75px] 2xl:pb-[100px];
 }
 
 .telco-section-heading {
