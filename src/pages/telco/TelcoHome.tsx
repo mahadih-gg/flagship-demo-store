@@ -52,7 +52,7 @@ const TelcoHome = () => {
         <EntryPoint
           id="#759348"
           skeletonType={EntryPointType.CIRCLE}
-          skeletonSize={EntryPointSize.STANDARD}
+          skeletonSize={EntryPointSize.BOLD}
         />
       </section>
 
@@ -76,6 +76,9 @@ const TelcoHome = () => {
       </section>
 
       <section className="telco-container telco-section-padding">
+        <h2 className="telco-section-heading text-center mb-10 sm:mb-[30px] lg:mb-[45px] 2xl:mb-[60px]">
+          Compare our most popular plans
+        </h2>
         <ResponsiveImage
           img="3.webp"
           imgFolder="telco"

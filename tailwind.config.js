@@ -7,7 +7,9 @@ export default {
         "3xl": "1920px",
       },
       fontFamily: {
-        "helvetica-neue": ['"Helvetica Neue"', "sans-serif"],
+        "helvetica-neue": ["Helvetica Neue", "sans-serif"],
+        "twk-lausanne": ["TWKLausanne", "sans-serif"],
+        "neue-plak": ["Neue Plak", "sans-serif"],
       },
       animation: {
         marquee: "marquee var(--duration) linear infinite",
