@@ -47,8 +47,8 @@ const TelcoHome = () => {
         </nav>
       </header>
 
-      <section className="telco-container pt-[60px] md:pt-10 lg:pt-[27px] 2xl:pt-[36px]">
-        <h1 className="text-center text-2xl sm:text-xl lg:text-2xl 2xl:text-[34px] font-bold pb-0 lg:pb-1.5 2xl:pb-6">Upgrade Your Phone - Sale On <br className="block sm:hidden" /> All Handsets!</h1>
+      <section className="telco-container pt-10 sm:pt-[30px] 2xl:pt-10">
+        <h1 className="text-center text-2xl sm:text-xl lg:text-2xl 2xl:text-[34px] font-bold mb-10 sm:mb-[30px] lg:mb-[45px] 2xl:mb-[60px]">Upgrade Your Phone - Sale On <br className="block sm:hidden" /> All Handsets!</h1>
         <EntryPoint
           id="#759348"
           skeletonType={EntryPointType.CIRCLE}
@@ -56,7 +56,7 @@ const TelcoHome = () => {
         />
       </section>
 
-      <section className="telco-container lg:pt-6 2xl:pt-10 telco-section-padding-bottom">
+      <section className="telco-container telco-section-padding">
         <ResponsiveImage
           img="2.webp"
           imgFolder="telco"
@@ -65,7 +65,7 @@ const TelcoHome = () => {
       </section>
 
       <section className="telco-container">
-        <h2 className="telco-section-heading pb-[16px] sm:pb-[13px] lg:pb-[32px] 2xl:pb-[44px]">
+        <h2 className="telco-section-heading pb-8 lg:pb-[45px] 2xl:pb-[60px]">
           Discover our top deals for you
         </h2>
         <EntryPoint
@@ -100,7 +100,7 @@ const TelcoHome = () => {
               alt="Telco iPhone"
             />
             <div>
-              <h3 className="text-xl md:text-2xl 2xl:text-2xl text-[#1D1D1F] font-bold mt-[60px] sm:mt-5 lg:mt-[60px] 2xl:mt-20 lg:mb-0 2xl:mb-2">
+              <h3 className="text-xl md:text-2xl 2xl:text-2xl text-[#1D1D1F] font-bold mt-[60px] sm:mt-5 lg:mt-[60px] 2xl:mt-20 mb-4 2xl:mb-5">
                 User Reviews
               </h3>
               <EntryPoint
@@ -132,8 +132,8 @@ const TelcoHome = () => {
         </div>
       </section>
 
-      <section className="telco-container telco-section-padding-top pb-[40px] md:pb-[50px] lg:pb-[75px] xl:pb-[105px]">
-        <h2 className="telco-section-heading text-center mb-[32px] sm:mb-[22px] lg:mb-[37px] 2xl:mb-[52px]">
+      <section className="telco-container telco-section-padding">
+        <h2 className="telco-section-heading text-center mb-10 sm:mb-[30px] lg:mb-[45px] 2xl:mb-[60px]">
           Recommended Just <br className="block sm:hidden" /> for You
         </h2>
 
@@ -161,8 +161,8 @@ const TelcoHome = () => {
         />
       </section>
 
-      <section className="telco-container telco-section-padding-top pb-[40px] md:pb-[50px] lg:pb-[75px] xl:pb-[105px]">
-        <h2 className="telco-section-heading text-center mb-[32px] sm:mb-[22px] lg:mb-[37px] 2xl:mb-[52px]">
+      <section className="telco-container telco-section-padding">
+        <h2 className="telco-section-heading text-center mb-10 sm:mb-[30px] lg:mb-[45px] 2xl:mb-[60px]">
           Experience our next-gen IoT innovation
         </h2>
 

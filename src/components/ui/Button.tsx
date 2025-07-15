@@ -1,4 +1,5 @@
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { useScrollTargetStore } from "../../stores/useScrollTargetStore";
 import { cn } from "../../utils";
 
 type ButtonProps = {
@@ -34,21 +35,36 @@ const Button = ({
   ...props
 }: ButtonProps) => {
 
+  const setTargetId = useScrollTargetStore((s) => s.setTargetId);
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (!link) return;
+    const id = link.replace("#", "");
+    setTargetId(id);
+
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   if (link) {
     return (
-      <a
-        href={link}
+      <button
         className={cn(
           "inline-flex items-center justify-center transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-helvetica-neue",
           variantStyles[variant],
           sizeStyles[size],
           className
         )}
+        onClick={(e) => handleClick(e)}
       >
         {isLoading ? <span className="mr-2">Loading...</span> : null}
         {children}
         {icon && <span className="ml-2 2xl:ml-2.5">{icon}</span>}
-      </a>
+      </button>
     )
   }
 

@@ -1,5 +1,7 @@
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import { useScrollTargetStore } from "../../stores/useScrollTargetStore";
+import { cn } from "../../utils";
 
 const DemoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -16,9 +18,26 @@ const DemoSection = () => {
     videoRef.current.pause();
   }
 
+  const targetId = useScrollTargetStore((s) => s.targetId);
+  const clearTargetId = useScrollTargetStore((s) => s.clearTargetId);
+
+  const [scrollMarginActive, setScrollMarginActive] = useState(false);
+
+  useLayoutEffect(() => {
+    if (targetId === "demo-section") {
+      setScrollMarginActive(true);
+      requestAnimationFrame(() => {
+        clearTargetId(); // clear before scroll to prevent sticky
+      });
+
+      // remove scroll margin after ~1.5s
+      setTimeout(() => setScrollMarginActive(false), 1500);
+    }
+  }, [targetId, clearTargetId]);
+
   return (
     <section className="landing-container landing-section-padding-top">
-      <h2 id="demo-section" className="landing-section-heading">Watch a demo of Horizon</h2>
+      <h2 id="demo-section" className={cn("landing-section-heading", scrollMarginActive && "scroll-mt-[500px] md:scroll-mt-[300px] lg:scroll-mt-[500px]")}>Watch a demo of Horizon</h2>
       <p className="landing-section-description pb-10 md:pb-11 2xl:pb-[60px]">
         Watch a short demo of our beta product
       </p>

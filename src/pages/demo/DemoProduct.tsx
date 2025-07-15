@@ -25,7 +25,7 @@ const DemoProduct = () => {
             </div>
 
             <div>
-              <h3 className="text-xl md:text-2xl xl:text-xl 2xl:text-2xl text-[#1D1D1F] font-bold pt-11">
+              <h3 className="text-xl md:text-2xl xl:text-xl 2xl:text-2xl text-[#1D1D1F] font-bold pt-11 pb-4 2xl:pb-6">
                 What's New in iPhone 16
               </h3>
               <EntryPoint
@@ -53,7 +53,7 @@ const DemoProduct = () => {
             />
 
             <div>
-              <h3 className="text-2xl md:text-4xl xl:text-xl 2xl:text-2xl  text-[#1D1D1F] font-bold pt-8 pb-2.5">
+              <h3 className="text-2xl md:text-lg xl:text-xl 2xl:text-2xl text-[#1D1D1F] font-bold pt-8 pb-4 md:pb-2.5 2xl:pb-4">
                 What People Are Loving
               </h3>
 
