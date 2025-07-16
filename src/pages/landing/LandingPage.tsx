@@ -1,3 +1,4 @@
+import FlagshipWrapper from "../../components/FlagshipWrapper";
 import DemoSection from "../../components/landing/DemoSection";
 import EntryPointSection from "../../components/landing/EntryPointSection";
 import Footer from "../../components/landing/Footer";
@@ -9,16 +10,18 @@ import TestimonialSection from "../../components/landing/TestimonialSection";
 
 const LandingPage = () => {
   return (
-    <main className="font-helvetica-neue">
-      <Header />
-      <HeroSection />
-      <EntryPointSection />
-      <StatsSection />
-      <DemoSection />
-      <TestimonialSection />
-      <StepsSection />
-      <Footer />
-    </main>
+    <FlagshipWrapper tenant="ecom">
+      <main className="font-helvetica-neue">
+        <Header />
+        <HeroSection />
+        <EntryPointSection />
+        <StatsSection />
+        <DemoSection />
+        <TestimonialSection />
+        <StepsSection />
+        <Footer />
+      </main>
+    </FlagshipWrapper>
   );
 };
 
