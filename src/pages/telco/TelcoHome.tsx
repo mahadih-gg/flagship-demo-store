@@ -27,7 +27,12 @@ const TelcoHome = () => {
         <header>
           <BlueTopBar containerClass="telco-container">
             Powered by Horizon • {" "}
-            <Link to="https://www.horizonexp.com/get-demo/" className="underline">Request Free Trial</Link>
+            <Link
+              to="https://www.horizonexp.com/get-demo/"
+              className="underline"
+            >
+              Request Free Trial
+            </Link>
           </BlueTopBar>
           <Marquee
             className="text-[#98A1BC] text-xs uppercase"

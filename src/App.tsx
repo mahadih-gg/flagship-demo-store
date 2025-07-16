@@ -6,6 +6,7 @@ import DemoHome from './pages/demo/DemoHome'
 import DemoProduct from './pages/demo/DemoProduct'
 import EcomHome from './pages/ecom/EcomHome'
 import LandingPage from './pages/landing/LandingPage'
+import SportsHome from './pages/sports/SportsHome'
 import TelcoHome from './pages/telco/TelcoHome'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/free-trial" element={<LandingPage />} />
           <Route path="/telco" element={<TelcoHome />} />
           <Route path="/ecom" element={<EcomHome />} />
+          <Route path="/sports" element={<SportsHome />} />
         </Route>
       </Routes>
     </>
