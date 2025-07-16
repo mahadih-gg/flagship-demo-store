@@ -28,7 +28,7 @@ const HeroSection = () => {
       {/* Left: Hero Text and List */}
       <div className="w-full lg:w-[57%] xl:w-[58%] 2xl:w-[56%] -ml-0.5 pt-4">
         <h1
-          className="text-[#1F2544] font-helvetica-neue font-medium pr-4 md:pr-5 lg:pr-0 text-[48px] md:text-[48px] xl:text-[60px] 3xl:text-[80px] leading-[56px] md:leading-[60px] xl:leading-[70px] 3xl:leading-[92px] tracking-[-0.8px] xl:tracking-[-1.6px]"
+          className="text-[#1F2544] font-helvetica-neue font-medium pr-4 md:pr-5 lg:pr-0 text-[44px] md:text-[48px] xl:text-[60px] 3xl:text-[80px] leading-[56px] md:leading-[60px] xl:leading-[70px] 3xl:leading-[92px] tracking-[-0.8px] xl:tracking-[-1.6px]"
         >
           Launch <br className="block sm:hidden" /> short-form videos <br /> on your <br className="block sm:hidden" /> online store
         </h1>
