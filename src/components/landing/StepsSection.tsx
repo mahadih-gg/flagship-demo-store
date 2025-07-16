@@ -1,24 +1,25 @@
 import { motion } from "framer-motion";
 import { useLayoutEffect, useRef, useState } from "react";
+import useWindowSize from "../../hooks/useWindowSize";
 import Button from "../ui/Button";
 import GetAccessModal from "./GetAccessModal";
 
 const steps = [
   {
     title: "Step 1 - Add your website / app",
-    description: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop."
+    description: "Login into Horizon Console, add your platform and get your license token. You can get your token from the Apps & Websites section."
   },
   {
     title: "Step 2 - Upload some videos",
-    description: "An all-in-one customer service platform that helps you balance everything your customers need to be happy."
+    description: "Upload high quality short-form videos in any aspect ratio and format. For the most immersive experience, we recommend using a 9:16 vertical format."
   },
   {
     title: "Step 3 - Create an entry point",
-    description: "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks."
+    description: "Choose the shape and size that blends perfectly into your platform design and select the AI recommendation logic that best suits your needs."
   },
   {
     title: "Step 4 - Place entry point on website / app",
-    description: "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks."
+    description: "Copy the code snippet and follow our guide to place entry points right where you want them. No manual setup required once configured."
   }
 ];
 
@@ -28,14 +29,18 @@ const StepsSection = () => {
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [barStyle, setBarStyle] = useState({ top: 0, height: 0 });
   const [stepContainerHeight, setStepContainerHeight] = useState(0);
+  const [buttonHeight, setButtonHeight] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { width } = useWindowSize();
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     if (stepRefs.current[activeStep]) {
       const el = stepRefs.current[activeStep];
       const stepContainerHeight = stepContainerRef.current?.clientHeight || 0;
       setStepContainerHeight(stepContainerHeight);
-
+      const buttonHeight = buttonRef.current?.clientHeight || 0;
+      setButtonHeight(buttonHeight);
       const parent = stepRefs.current[0]?.parentElement;
       if (el && parent) {
         const parentRect = parent.getBoundingClientRect();
@@ -46,7 +51,7 @@ const StepsSection = () => {
         });
       }
     }
-  }, [activeStep]);
+  }, [activeStep, width]);
 
   return (
     <section className="landing-container-left pb-[60px] md:pb-[100px] lg:pb-[180px] xl:pb-[240px]">
@@ -55,7 +60,7 @@ const StepsSection = () => {
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-10 md:gap-[60px] 3xl:gap-[80px] pt-10 md:pt-16 3xl:pt-[80px]">
-        <div className="relative pr-4 md:pr-5 lg:pr-0 w-full lg:w-[44%]">
+        <div className="w-full lg:w-[46%] relative pr-4 md:pr-5 lg:pr-0">
           {/* Step Indicator Bar */}
           <div className="absolute -left-2 md:left-0 top-0 h-full flex flex-col items-center" style={{ width: 24, height: stepContainerHeight }}>
             {/* Bar background */}
@@ -86,14 +91,19 @@ const StepsSection = () => {
               </div>
             ))}
           </div>
-          <div className="pl-0 md:pl-8 mt-5 3xl:mt-10">
+          <div ref={buttonRef} className="pl-0 md:pl-8 pt-5 3xl:pt-10">
             <Button className="w-full" onClick={() => setIsModalOpen(true)}>
               Request Early Access
             </Button>
           </div>
         </div>
         <div className="w-full lg:w-[56%] h-full overflow-hidden">
-          <img src="/assets/images/landing/step-1.webp" alt="Steps" className="w-auto h-[350px] md:h-full object-cover object-left" />
+          <img
+            src="/assets/images/landing/step-1.webp"
+            alt="Steps"
+            className="w-auto h-full object-cover object-left"
+            style={width > 1024 ? { height: `${stepContainerHeight + buttonHeight}px` } : {}}
+          />
         </div>
       </div>
 

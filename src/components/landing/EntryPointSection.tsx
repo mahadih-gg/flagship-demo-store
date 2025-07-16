@@ -1,4 +1,5 @@
-import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import EntryPointWrapper from "../EntryPointWrapper";
 
 const EntryPointSection = () => {
   return (
@@ -8,8 +9,8 @@ const EntryPointSection = () => {
         Click below to see for yourself why Horizon leads the industry in short-form video engagement.
       </p>
 
-      <EntryPoint
-        id="#897749"
+      <EntryPointWrapper
+        id="#619926"
         skeletonType={EntryPointType.RECTANGLE}
         skeletonSize={EntryPointSize.BOLD}
       />
