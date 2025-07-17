@@ -108,7 +108,7 @@ const TelcoHome = () => {
                 alt="Telco iPhone"
               />
               <div>
-                <h3 className="text-xl md:text-2xl 2xl:text-2xl text-[#1D1D1F] font-bold mt-[60px] sm:mt-5 lg:mt-[60px] 2xl:mt-20 mb-4 2xl:mb-5">
+                <h3 className="text-xl md:text-2xl 2xl:text-2xl text-[#1D1D1F] font-bold mt-[60px] sm:mt-5 lg:mt-[60px] 2xl:mt-20 mb-4 lg:mb-[30px] 2xl:mb-10">
                   User Reviews
                 </h3>
                 <EntryPointWrapper
@@ -116,9 +116,9 @@ const TelcoHome = () => {
                   skeletonType={EntryPointType.CIRCLE}
                   skeletonSize={EntryPointSize.STANDARD}
                 />
-                <div className="pt-4 xl:pt-2 2xl:pt-8 3xl:pt-20">
+                <div className="pt-4 md:pt-10 2xl:pt-[60px] 3xl:pt-20">
                   <div className="flex justify-start items-center pb-6 2xl:pb-[32px] gap-3 2xl:gap-4">
-                    <h3 className="text-xl xl:text-2xl 2xl:text-3xl text-[#15234E] font-bold">Learn More About this Device</h3>
+                    <h3 className="text-xl xl:text-2xl 3xl:text-3xl text-[#15234E] font-bold">Learn More About this Device</h3>
                     <span className="lg:text-2xl pt-2">
                       <FiChevronRight strokeWidth="2.4" />
                     </span>
