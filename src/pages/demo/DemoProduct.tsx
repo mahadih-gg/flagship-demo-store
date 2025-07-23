@@ -1,6 +1,7 @@
-import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { FiChevronRight } from "react-icons/fi";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import EntryPointWrapper from "../../components/EntryPointWrapper";
 import ResponsiveImage from "../../components/ResponsiveImage";
 
 const DemoProduct = () => {
@@ -28,7 +29,7 @@ const DemoProduct = () => {
               <h3 className="text-xl md:text-2xl xl:text-xl 2xl:text-2xl text-[#1D1D1F] font-bold pt-11 pb-4 2xl:pb-6">
                 What's New in iPhone 16
               </h3>
-              <EntryPoint
+              <EntryPointWrapper
                 id="#842010"
                 skeletonType={EntryPointType.CIRCLE}
                 skeletonSize={EntryPointSize.STANDARD}
@@ -57,7 +58,7 @@ const DemoProduct = () => {
                 What People Are Loving
               </h3>
 
-              <EntryPoint
+              <EntryPointWrapper
                 id="#118529"
                 skeletonType={EntryPointType.RECTANGLE}
                 skeletonSize={EntryPointSize.STANDARD}
@@ -83,7 +84,7 @@ const DemoProduct = () => {
 
         <h2 className="demo-section-heading">You May Also Like These Products</h2>
 
-        <EntryPoint
+        <EntryPointWrapper
           id="#252249"
           skeletonType={EntryPointType.RECTANGLE}
           skeletonSize={EntryPointSize.BOLD}

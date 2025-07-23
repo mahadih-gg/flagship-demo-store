@@ -18,15 +18,15 @@ const TestimonialSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
         className="font-medium text-lg 3xl:text-2xl pb-[6px] 3xl:pb-2"
-      >Isabella Chen</motion.p>
+      >Celine</motion.p>
 
       <motion.span
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         className="text-base 3xl:text-xl text-[#475467]"
-      >UX Designer, Sparkle</motion.span>
+      >Chief Marketing Officer</motion.span>
     </section>
   );
 };

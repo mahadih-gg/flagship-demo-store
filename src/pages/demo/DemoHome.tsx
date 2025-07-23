@@ -1,4 +1,5 @@
-import { EntryPoint, EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import EntryPointWrapper from "../../components/EntryPointWrapper";
 import ResponsiveImage from "../../components/ResponsiveImage";
 
 const DemoHome = () => {
@@ -28,7 +29,7 @@ const DemoHome = () => {
 
       <section className="demo-container demo-section-padding-top">
         <h2 className="demo-section-heading">Don’t Miss These Limited-Time Deals</h2>
-        <EntryPoint
+        <EntryPointWrapper
           id="#056779"
           skeletonType={EntryPointType.RECTANGLE}
           skeletonSize={EntryPointSize.BOLD}

@@ -158,12 +158,24 @@
   font-style: normal;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* globals.css */
+.cursor-force-none {
+  cursor: none !important;
+}
+
+.cursor-force-none * {
+  cursor: none !important;
+}
+
 
 /* ============== Landing Styles =============== */
 
@@ -286,4 +298,39 @@
   letter-spacing: -3%;
   line-height: 108%;
   font-family: "TWKLausanne";
+}
+
+
+/* ============== Sports Styles =============== */
+
+.sports-wrapper {
+  font-family: "Neue Plak";
+  @apply bg-[#FAF9FA];
+}
+
+.sports-container {
+  @apply max-w-[1920px] mx-auto px-5;
+  font-family: "Neue Plak";
+}
+
+.sports-section-wrapper {
+  @apply bg-white rounded-[16px] 2xl:rounded-[20px] p-4 2xl:p-5 overflow-hidden;
+}
+
+.sports-section-padding {
+  @apply py-[40px] lg:py-[45px] 2xl:py-[60px];
+}
+
+.sports-section-padding-top {
+  @apply pt-[40px] lg:pt-[45px] 2xl:pt-[60px];
+}
+
+.sports-section-padding-bottom {
+  @apply pb-[40px] lg:pb-[45px] 2xl:pb-[60px];
+}
+
+.sports-section-heading {
+  @apply text-[#15234E] font-bold text-[24px] 2xl:text-[32px] pb-[22px] lg:pb-6 2xl:pb-[30px];
+  line-height: 108%;
+  font-family: "Neue Plak";
 }
