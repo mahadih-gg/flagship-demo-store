@@ -9,7 +9,7 @@ import { Textarea } from "../ui/textarea";
 const InputGroup = ({ label, children, name }: { label: string, children: React.ReactNode, name: string }) => {
   return (
     <div className="space-y-2 tracking-wide 3xl:space-y-3 ">
-      <label htmlFor={name} className="font-24px font-semibold text-[#15234E]">
+      <label htmlFor={name} className="text-xl sm:text-2xl xl:text-lg 3xl:text-2xl font-semibold text-[#15234E]">
         {label}
       </label>
 
@@ -25,14 +25,14 @@ const Contact = () => {
     if (state.succeeded) {
       console.log("state.succeeded", state.succeeded);
 
-      navigate("/thank-you");
+      // navigate("/thank-you");
     }
   }, [navigate, state.succeeded]);
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="grid gap-6 lg:gap-7 3xl:gap-10">
-        <div className="grid w-full gap-x-4 gap-y-6 md:grid-cols-2 3xl:gap-10">
+        <div className="grid w-full gap-x-4 gap-y-6 lg:grid-cols-2 3xl:gap-10">
           <InputGroup name="name" label={"Full Name*"}>
             <Input
               type="text"
@@ -80,7 +80,7 @@ const Contact = () => {
         <ButtonDemoStore
           size="lg"
           disabled={state.submitting}
-          className=" md:ml-auto w-fit px-9"
+          className="lg:ml-auto w-fit px-9"
           variant="default"
         >
           {state.submitting && (
