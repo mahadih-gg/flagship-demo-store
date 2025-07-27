@@ -87,7 +87,7 @@ const DemoStore = () => {
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-10 sm:mt-[100px] xl:mt-[42px] 3xl:mt-[56px]">
             <ButtonDemoStore className="w-full lg:w-52" size="lg" asChild>
-              <a href="#demos">Explore Horizon</a>
+              <a href="https://horizonexp.com/products">Explore Horizon</a>
             </ButtonDemoStore>
             <ButtonDemoStore className="w-full lg:w-52" size="lg" variant="blueOutline" asChild>
               <a href="#contact">Get a Demo</a>
