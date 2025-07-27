@@ -302,7 +302,6 @@
 
 
 /* ============== Sports Styles =============== */
-
 .sports-wrapper {
   font-family: "Neue Plak";
   @apply bg-[#FAF9FA];
@@ -333,4 +332,33 @@
   @apply text-[#15234E] font-bold text-[24px] 2xl:text-[32px] pb-[22px] lg:pb-6 2xl:pb-[30px];
   line-height: 108%;
   font-family: "Neue Plak";
+}
+
+
+/* ============== Demo Store Styles =============== */
+
+.demo-store-wrapper {
+  font-family: "Neue Plak";
+}
+
+.demo-store-container {
+  @apply max-w-[1920px] px-5 sm:px-6 lg:px-[60px] 2xl:px-[90px] 3xl:px-[120px] mx-auto;
+}
+
+.demo-store-section-padding {
+  @apply py-[70px] sm:py-[100px] xl:py-[165px] 3xl:py-[220px];
+}
+
+.demo-store-section-padding-top {
+  @apply pt-[70px] sm:pt-[100px] xl:pt-[165px] 3xl:pt-[220px];
+}
+
+.demo-store-section-padding-bottom {
+  @apply pb-[70px] sm:pb-[100px] xl:pb-[165px] 3xl:pb-[220px];
+}
+
+.demo-store-section-heading {
+  @apply text-[#15234E] font-semibold text-[50px] sm:text-[62px] xl:text-[75px] 3xl:text-[100px];
+  letter-spacing: -3%;
+  line-height: 100%;
 }
