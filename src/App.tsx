@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router'
 import DefaultLayout from './layouts/DefaultLayout'
-import DemoStore from './pages/demo-store/DemoStore'
-import EcomHome from './pages/ecom/EcomHome'
-import LandingPage from './pages/landing/LandingPage'
-import RestaurantHome from './pages/restaurant/RestaurantHome'
-import SportsHome from './pages/sports/SportsHome'
-import TelcoHome from './pages/telco/TelcoHome'
+import DailyStarPage from './pages/daily-star'
+import DemoStorePage from './pages/demo-store'
+import EcomPage from './pages/ecom'
+import LandingPage from './pages/landing'
+import RestaurantPage from './pages/restaurant'
+import SportsPage from './pages/sports'
+import TelcoPage from './pages/telco'
 import './styles/App.css'
 
 function App() {
@@ -18,12 +19,13 @@ function App() {
           <Route path="/product" element={<DemoProduct />} />
         </Route> */}
         <Route element={<DefaultLayout />}>
-          <Route path="/" element={<DemoStore />} />
+          <Route path="/" element={<DemoStorePage />} />
           <Route path="/free-trial" element={<LandingPage />} />
-          <Route path="/telco" element={<TelcoHome />} />
-          <Route path="/ecom" element={<EcomHome />} />
-          <Route path="/sports" element={<SportsHome />} />
-          <Route path="/restaurant" element={<RestaurantHome />} />
+          <Route path="/telco" element={<TelcoPage />} />
+          <Route path="/ecom" element={<EcomPage />} />
+          <Route path="/sports" element={<SportsPage />} />
+          <Route path="/restaurant" element={<RestaurantPage />} />
+          <Route path="/daily-star" element={<DailyStarPage />} />
         </Route>
       </Routes>
     </>

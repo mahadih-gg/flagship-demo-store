@@ -1,13 +1,13 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { Link } from "react-router";
-import BlueTopBar from "../../components/BlueTopBar";
-import EntryPointWrapper from "../../components/EntryPointWrapper";
-import FlagshipWrapper from "../../components/FlagshipWrapper";
-import ResponsiveImage from "../../components/ResponsiveImage";
-import RestaurantHeader from "../../components/restaurant/RestaurantHeader";
-import { Marquee } from "../../components/ui/Marquee";
+import BlueTopBar from "../components/BlueTopBar";
+import EntryPointWrapper from "../components/EntryPointWrapper";
+import FlagshipWrapper from "../components/FlagshipWrapper";
+import ResponsiveImage from "../components/ResponsiveImage";
+import RestaurantHeader from "../components/restaurant/RestaurantHeader";
+import { Marquee } from "../components/ui/Marquee";
 
-const RestaurantHome = () => {
+const RestaurantPage = () => {
   const marqueeTexts = [
     "This is a demo of Horizon VIDEO SaaS platform",
     "━",
@@ -163,4 +163,4 @@ const RestaurantHome = () => {
   );
 };
 
-export default RestaurantHome;
+export default RestaurantPage;

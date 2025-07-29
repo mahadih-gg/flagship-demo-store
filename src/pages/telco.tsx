@@ -1,15 +1,15 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router";
-import BlueTopBar from "../../components/BlueTopBar";
-import EntryPointWrapper from "../../components/EntryPointWrapper";
-import FlagshipWrapper from "../../components/FlagshipWrapper";
-import ResponsiveImage from "../../components/ResponsiveImage";
-import LeftIcon from "../../components/svg/LeftIcon";
-import RightIcon from "../../components/svg/RightIcon";
-import { Marquee } from "../../components/ui/Marquee";
+import BlueTopBar from "../components/BlueTopBar";
+import EntryPointWrapper from "../components/EntryPointWrapper";
+import FlagshipWrapper from "../components/FlagshipWrapper";
+import ResponsiveImage from "../components/ResponsiveImage";
+import LeftIcon from "../components/svg/LeftIcon";
+import RightIcon from "../components/svg/RightIcon";
+import { Marquee } from "../components/ui/Marquee";
 
-const TelcoHome = () => {
+const TelcoPage = () => {
   const marqueeTexts = [
     "This is a demo of Horizon VIDEO SaaS platform",
     "━",
@@ -205,4 +205,4 @@ const TelcoHome = () => {
   );
 };
 
-export default TelcoHome;
+export default TelcoPage;

@@ -1,12 +1,12 @@
 import { AnimatePresence, motion } from "motion/react";
-import Contact from "../../components/demo-store/Contact";
-import DemoShowcase from "../../components/demo-store/DemoShowcase";
-import DemoStoreFooter from "../../components/demo-store/DemoStoreFooter";
-import ExpectSection from "../../components/demo-store/ExpectSection";
-import HorizonTextLogo from "../../components/svg/HorizonTextLogo";
-import { ButtonDemoStore } from "../../components/ui/ButtonDemoStore";
+import Contact from "../components/demo-store/Contact";
+import DemoShowcase from "../components/demo-store/DemoShowcase";
+import DemoStoreFooter from "../components/demo-store/DemoStoreFooter";
+import ExpectSection from "../components/demo-store/ExpectSection";
+import HorizonTextLogo from "../components/svg/HorizonTextLogo";
+import { ButtonDemoStore } from "../components/ui/ButtonDemoStore";
 
-const DemoStore = () => {
+const DemoStorePage = () => {
 
   const textMotion = {
     initial: { opacity: 0, y: 10 },
@@ -103,4 +103,4 @@ const DemoStore = () => {
   );
 };
 
-export default DemoStore;
+export default DemoStorePage;
