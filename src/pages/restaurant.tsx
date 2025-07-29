@@ -19,7 +19,7 @@ const RestaurantPage = () => {
     "━",
   ];
   return (
-    <FlagshipWrapper tenant="ecom">
+    <FlagshipWrapper tenant="restaurant">
       <main className="restaurant-wrapper">
         <header>
           <BlueTopBar containerClass="restaurant-container">
@@ -47,7 +47,7 @@ const RestaurantPage = () => {
 
         <section className="restaurant-container py-10 xl:py-[45px] 3xl:py-[60px]">
           <EntryPointWrapper
-            id="#128768"
+            id="#376991"
             skeletonType={EntryPointType.CIRCLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -71,7 +71,7 @@ const RestaurantPage = () => {
             description="Grab these mouthwatering deals before they’re gone!"
           />
           <EntryPointWrapper
-            id="#619926"
+            id="#516330"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -95,7 +95,7 @@ const RestaurantPage = () => {
             description="Based on your taste, we think you’ll love these."
           />
           <EntryPointWrapper
-            id="#619926"
+            id="#863364"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -109,11 +109,13 @@ const RestaurantPage = () => {
           />
           <p className="text-lg 3xl:text-2xl leading-8 text-center pt-1 xl:pt-2.5 3xl:pt-3 pb-10 xl:pb-[60px] 3xl:pb-[80px]">Choose from 8 mouthwatering flavors. <br className="block sm:hidden" /> What Crust Are You?® <br /> Become a Crustomizer® and create your own flavor combinations by mixing your Flavored Crusts together.</p>
 
-          <EntryPointWrapper
-            id="#128768"
-            skeletonType={EntryPointType.CIRCLE}
-            skeletonSize={EntryPointSize.BOLD}
-          />
+          <div className="max-w-[1033px] 2xl:max-w-[1354px] mx-auto">
+            <EntryPointWrapper
+              id="#774404"
+              skeletonType={EntryPointType.CIRCLE}
+              skeletonSize={EntryPointSize.STANDARD}
+            />
+          </div>
 
           <p className="text-xl 3xl:text-[26px] leading-relaxed text-center pt-[52px] xl:pt-[44px] 3xl:pt-[62px]">What sets Pizza Jam apart? Our signature flavored crusts! Elevate your pizza experience with unique options like Butter, Butter Cheese, Asiago Cheese, Ranch, Italian Herb, Cajun, Sesame, <span className="hidden sm:inline">and Garlic Herb flavored crusts. These distinctive crust flavors add an unparalleled burst of taste that others</span> <span className="inline lg:hidden font-semibold">...more</span> <span className="hidden lg:inline">attempt to imitate but can never quite recreate our original flavored crust pizzas. Don't wait any longer – place your pizza delivery order now and treat yourself to a pizza experience like no other! Find the nearest Pizza Jam near you here.</span></p>
 

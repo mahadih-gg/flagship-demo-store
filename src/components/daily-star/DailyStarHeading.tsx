@@ -17,7 +17,7 @@ const DailyStarHeading = ({ title, titleClassName, placeholder, placeholderClass
       <div className="relative flex items-center justify-center text-center gap-3 z-10 ">
 
         <span className={cn(
-          "text-8xl font-bold text-[#F2F4F7] xl:text-[72px] xl:leading-[90px] 3xl:text-[96px] 3xl:leading-[120px] tracking-[-1.92px] bg-white px-2",
+          "text-8xl font-bold text-[#F2F4F7] text-[37px] leading-[58px] sm:text-[66px] sm:leading-[90px] xl:text-[72px] xl:leading-[90px] 3xl:text-[96px] 3xl:leading-[120px] tracking-[-1.92px] bg-white px-2",
           placeholderClassName
         )}
         >
@@ -25,7 +25,7 @@ const DailyStarHeading = ({ title, titleClassName, placeholder, placeholderClass
         </span>
 
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center justify-center gap-2">
-          <h2 className={cn("text-[#1D4340] text-4xl 3xl:text-5xl tracking-[-0.96px] font-bold", titleClassName)}>
+          <h2 className={cn("text-[#1D4340] text-[24px] leading-[44px] sm:text-[36px] sm:leading-[44px] xl:text-[36px] xl:leading-[44px] 3xl:text-[48px] 3xl:leading-[58px] tracking-[-0.96px] font-bold", titleClassName)}>
             {title}
           </h2>
 
