@@ -21,7 +21,7 @@ const DailyStarPage = () => {
   ];
 
   return (
-    <FlagshipWrapper tenant="ecom">
+    <FlagshipWrapper tenant="daily-star">
       <main className="daily-star-wrapper">
         <header
           style={{
@@ -55,7 +55,7 @@ const DailyStarPage = () => {
 
         <section className="daily-star-container pt-7 pb-7 sm:pt-[28px] sm:pb-[42px] xl:pt-[40px] xl:pb-[56px] 3xl:pt-[52px] 3xl:pb-[78px]">
           <EntryPointWrapper
-            id="#128768"
+            id="#293059"
             skeletonType={EntryPointType.CIRCLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -74,7 +74,7 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Grow with Keeron" titleClassName="text-[#1D4340]" />
           </div>
           <EntryPointWrapper
-            id="#619926"
+            id="#333508"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -97,9 +97,9 @@ const DailyStarPage = () => {
             <div className="w-full sm:w-1/2 xl:w-[34%] 3xl:w-[34%]">
               <h3 className="text-[#101828] font-semibold text-2xl sm:text-[26px] xl:text-[28px] 3xl:text-4xl pb-2 sm:pb-4 xl:pb-5 3xl:pb-9">Shera Radhuni Highlights</h3>
               <EntryPointWrapper
-                id="#619926"
-                skeletonType={EntryPointType.RECTANGLE}
-                skeletonSize={EntryPointSize.BOLD}
+                id="#199431"
+                skeletonType={EntryPointType.BLOCK}
+                skeletonSize={EntryPointSize.BLOCK_OF_4}
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Special Handset Deals" placeholder="Handset Deals" titleClassName="text-[#101828]" />
           </div>
           <EntryPointWrapper
-            id="#619926"
+            id="#176293"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -124,7 +124,7 @@ const DailyStarPage = () => {
           />
         </section>
 
-        <section className="bg-[#EAECF0]">
+        <section className="bg-[#EAECF0] pt-[24px] 3xl:pt-[34px]">
           <div className="daily-star-container">
             <ResponsiveImage
               img="5.webp"
@@ -139,12 +139,12 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Business" titleClassName="text-[#1779BA]" />
           </div>
           <EntryPointWrapper
-            id="#128768"
+            id="#910783"
             skeletonType={EntryPointType.CIRCLE}
             skeletonSize={EntryPointSize.BOLD}
           />
         </section>
-        <section className="daily-star-container">
+        <section className="daily-star-container pb-10 sm:pb-[44px] xl:pb-[44px] 3xl:pb-[60px]">
           <div className="pt-7 pb-10 sm:pt-10 sm:pb-10 xl:pt-0 xl:pb-[70px] 3xl:pt-0 3xl:pb-[94px]">
             <DailyStarHeading title="Star Multimedia" titleClassName="text-[#101828]" />
           </div>
@@ -160,9 +160,9 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Sports" titleClassName="text-[#009833]" />
           </div>
           <EntryPointWrapper
-            id="#619926"
+            id="#190144"
             skeletonType={EntryPointType.RECTANGLE}
-            skeletonSize={EntryPointSize.BOLD}
+            skeletonSize={EntryPointSize.STANDARD}
           />
         </section>
 
@@ -184,7 +184,7 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Life & Living" titleClassName="text-[#101828]" arrowClassName="border-[#E26737]" hasLine={false} />
           </div>
           <EntryPointWrapper
-            id="#619926"
+            id="#353741"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />
@@ -206,7 +206,7 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Your Stories" titleClassName="text-[#065466]" />
           </div>
           <EntryPointWrapper
-            id="#619926"
+            id="#412812"
             skeletonType={EntryPointType.RECTANGLE}
             skeletonSize={EntryPointSize.BOLD}
           />

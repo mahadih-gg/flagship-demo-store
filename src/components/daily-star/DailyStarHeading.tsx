@@ -29,7 +29,7 @@ const DailyStarHeading = ({ title, titleClassName, placeholder, placeholderClass
             {title}
           </h2>
 
-          <span className={cn("block border-r-2 3xl:border-r-4 border-b-2 3xl:border-b-4 border-[#436696] size-3 3xl:size-4 -rotate-45 mt-4", arrowClassName)} />
+          <span className={cn("block border-r-2 3xl:border-r-4 border-b-2 3xl:border-b-4 border-[#436696] size-3 3xl:size-4 -rotate-45 mt-2 sm:mt-4", arrowClassName)} />
         </div>
       </div>
 
