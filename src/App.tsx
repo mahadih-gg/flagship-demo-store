@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router'
-import './App.css'
 import DefaultLayout from './layouts/DefaultLayout'
 import DemoStore from './pages/demo-store/DemoStore'
 import EcomHome from './pages/ecom/EcomHome'
 import LandingPage from './pages/landing/LandingPage'
+import RestaurantHome from './pages/restaurant/RestaurantHome'
 import SportsHome from './pages/sports/SportsHome'
 import TelcoHome from './pages/telco/TelcoHome'
+import './styles/App.css'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/telco" element={<TelcoHome />} />
           <Route path="/ecom" element={<EcomHome />} />
           <Route path="/sports" element={<SportsHome />} />
+          <Route path="/restaurant" element={<RestaurantHome />} />
         </Route>
       </Routes>
     </>

@@ -1,0 +1,80 @@
+## GLOBAL RULES
+
+- You are an expert full-stack web developer.
+- Use **Vite**, **React 18**, **TailwindCSS v3.4.17**, and **TypeScript**.
+- All code must be **clear**, **readable**, **modern**, and **idiomatic**.
+- Prioritize **correct**, **complete**, **secure**, and **fully functional** implementations.
+- Never leave TODOs, placeholders, or incomplete logic.
+- All file names must use **kebab-case** (e.g. `hero-section.tsx`).
+- Write **bug-free**, **lint-safe**, and **type-safe** code.
+
+---
+
+## COMPONENT & ARCHITECTURE RULES
+
+- Use **React Server Components** by default.
+- Only use `'use client'` for **isolated interactivity** (buttons, toggles, menus).
+- Separate **page-level layout/logic** from **presentational components**.
+- Every page in the `pages` or `routes` folder must have its **own scoped styles** and **components** if needed.
+- Reuse **UI patterns** and **atomic structure** between pages, but keep **per-page components/styles** isolated.
+- Use `@/components/shared/` for global reusable components (e.g. `button`, `input`, `modal`).
+- Use `@/components/pages/landing-x/` for page-specific components (e.g. `hero`, `features`, `testimonials`).
+
+---
+
+## TAILWINDCSS RULES
+
+- Use **utility-first** approach and **compose with `@apply`** for shared patterns.
+- Abstract repeated patterns into **Tailwind components** or **SCSS mixins** (if using preprocessor).
+- Follow responsive design best practices (`sm`, `md`, `lg`, `xl`, `2xl`).
+- Match shared section patterns across landing pages using consistent `padding`, `spacing`, `font`, and `breakpoints`.
+- Use Tailwind plugins if needed for **typography**, **forms**, **aspect-ratio**, etc.
+
+---
+
+## NAMING & FILE STRUCTURE RULES
+
+- All components and files must be in **kebab-case**.
+- Component names must reflect their **purpose and location**.
+  - ✅ `components/pages/landing-1/hero-section.tsx`
+  - ✅ `components/shared/primary-button.tsx`
+- Group similar components with **index.ts exports** for DX.
+
+---
+
+## DATA FETCHING & UI STATE
+
+- Always handle **loading**, **empty**, and **error** states.
+- Use **React Suspense** and/or **fallback UIs** where possible.
+- Implement **graceful fallback behavior** for failed fetches.
+- Use `try/catch` and **log errors** via `console.error` or an error tracking tool.
+
+---
+
+## HTML & ACCESSIBILITY
+
+- Use **semantic HTML** (e.g. `section`, `nav`, `main`, `article`, `aside`, `footer`).
+- Include `aria-*` attributes, roles, and keyboard navigation where appropriate.
+- All interactive elements (like buttons and inputs) must be **accessible** and **keyboard-navigable**.
+
+---
+
+## DESIGN SYSTEM & PATTERNS
+
+- Maintain **visual consistency** across all landing pages:
+  - Section titles
+  - Spacing scale
+  - Button styles
+  - Font weights and colors
+- **Follow Patterns** based on other pages.
+- Favor **reusable variants** and **layout sections**.
+- Each landing page should follow a **consistent section hierarchy**:
+  - Hero → Features → Benefits → Testimonials → CTA → Footer
+
+---
+
+## MISCELLANEOUS
+
+- Always follow the user’s instruction **exactly**.
+- Keep answers **concise** and **implementation-focused**.
+- If something is unknown or speculative, say so.

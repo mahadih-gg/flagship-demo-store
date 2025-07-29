@@ -1,0 +1,9 @@
+/* Import all page-specific styles */
+@import './globals.css';
+@import './landing.css';
+@import './demo.css';
+@import './telco.css';
+@import './ecom.css';
+@import './sports.css';
+@import './demo-store.css';
+@import './restaurant.css';
