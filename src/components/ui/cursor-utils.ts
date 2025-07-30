@@ -28,7 +28,6 @@ export const useMouseTracker = (): MouseTrackerContextType => {
 
 export type MouseTrackerProviderProps = React.ComponentProps<"div"> & {
   children: React.ReactNode;
-  isHovering: boolean;
 };
 
 export type PointerProps = HTMLMotionProps<"div"> & {

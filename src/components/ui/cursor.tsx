@@ -19,11 +19,10 @@ import {
 function MouseTrackerProvider({
   ref,
   children,
-  isHovering,
   ...rest
 }: MouseTrackerProviderProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [active, setActive] = useState(isHovering);
+  const [active, setActive] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const pointerRef = useRef<HTMLDivElement>(null);
   useImperativeHandle(ref, () => wrapperRef.current as HTMLDivElement);
