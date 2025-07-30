@@ -71,7 +71,7 @@ const DailyStarPage = () => {
 
         <section className="daily-star-container">
           <div className="pt-0 pb-6 sm:pt-0 sm:pb-[35px] xl:pt-[20px] xl:pb-[34px] 3xl:pt-[26px] 3xl:pb-[46px]">
-            <DailyStarHeading title="Grow with Keeron" titleClassName="text-[#1D4340]" />
+            <DailyStarHeading title="Grow with Keeron" titleClassName="text-[#1D4340]" placeholderClassName="text-[37px]" />
           </div>
           <EntryPointWrapper
             id="#333508"
@@ -86,7 +86,7 @@ const DailyStarPage = () => {
             <DailyStarHeading title="Just In" titleClassName="text-[#E36E4B]" />
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-7">
+          <div className="flex flex-col sm:flex-row gap-5 3xl:gap-7">
             <div className="w-full sm:w-1/2 xl:w-[65%] 3xl:w-[64%]">
               <ResponsiveImage
                 img="3.webp"
@@ -94,8 +94,8 @@ const DailyStarPage = () => {
                 alt="Daily Star"
               />
             </div>
-            <div className="w-full sm:w-1/2 xl:w-[34%] 3xl:w-[34%]">
-              <h3 className="text-[#101828] font-semibold text-2xl sm:text-[26px] xl:text-[28px] 3xl:text-4xl pb-2 sm:pb-4 xl:pb-5 3xl:pb-9">Shera Radhuni Highlights</h3>
+            <div className="w-full sm:w-1/2 xl:w-[34%] 3xl:w-[34%] mt-0 sm:-mt-3 xl:mt-0">
+              <h3 className="text-[#101828] font-semibold text-2xl sm:text-[26px] xl:text-[28px] 3xl:text-4xl pb-2 sm:pb-3 xl:pb-5 3xl:pb-9">Shera Radhuni Highlights</h3>
               <EntryPointWrapper
                 id="#199431"
                 skeletonType={EntryPointType.BLOCK}
@@ -116,7 +116,7 @@ const DailyStarPage = () => {
           />
         </section>
 
-        <section className="max-w-[1270px] 3xl:max-w-[1693px] mx-auto pt-10 pb-10 sm:pt-12 sm:pb-4 xl:pt-[60px] xl:pb-5 3xl:pt-[80px] 3xl:pb-[26px]">
+        <section className="max-w-[1270px] 3xl:max-w-[1693px] mx-auto pt-10 pb-10 sm:pt-12 sm:pb-4 xl:pt-[60px] xl:pb-5 3xl:pt-[80px] 3xl:pb-[26px] px-5 sm:px-6 xl:px-0">
           <ResponsiveImage
             img="4.webp"
             imgFolder="daily-star"
@@ -124,7 +124,7 @@ const DailyStarPage = () => {
           />
         </section>
 
-        <section className="bg-[#EAECF0] pt-[24px] 3xl:pt-[34px]">
+        <section className="bg-[#EAECF0] pt-[24px] 3xl:pt-[34px] pb-10 sm:pb-11 xl:pb-5">
           <div className="daily-star-container">
             <ResponsiveImage
               img="5.webp"
@@ -134,7 +134,7 @@ const DailyStarPage = () => {
           </div>
         </section>
 
-        <section className="daily-star-container">
+        <section className="daily-star-container pb-[58px] sm:pb-10 3xl:pb-[52px]">
           <div className="pt-[36px] pb-[24px] sm:pt-[18px] sm:pb-[34px] xl:pt-0 xl:pb-6 3xl:pt-0 3xl:pb-[30px]">
             <DailyStarHeading title="Business" titleClassName="text-[#1779BA]" />
           </div>
@@ -179,7 +179,7 @@ const DailyStarPage = () => {
           </div>
         </section>
 
-        <section className="daily-star-container">
+        <section className="daily-star-container pb-10 sm:pb-0 ">
           <div className="pt-[54px] pb-7 sm:pt-0 sm:pb-6 xl:pt-[54px] xl:pb-[46px] 3xl:pt-[60px] 3xl:pb-[60px]">
             <DailyStarHeading title="Life & Living" titleClassName="text-[#101828]" arrowClassName="border-[#E26737]" hasLine={false} />
           </div>
@@ -230,7 +230,7 @@ const DailyStarPage = () => {
             />
           </div>
 
-          <div className="daily-star-container pt-12 pb-12 sm:pt-[64px] sm:pb-[48px] xl:pt-[64px] xl:pb-[48px] 3xl:pt-[85px] 3xl:pb-[64px]">
+          <div className="daily-star-container pt-12 pb-12 sm:pt-[110px] sm:pb-[48px] xl:pt-[64px] xl:pb-[48px] 3xl:pt-[85px] 3xl:pb-[64px]">
             <ResponsiveImage
               img="10.webp"
               imgFolder="daily-star"
