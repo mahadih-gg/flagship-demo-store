@@ -1,5 +1,4 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
-import { Link } from "react-router";
 import BlueTopBar from "../components/BlueTopBar";
 import DailyStarHeading from "../components/daily-star/DailyStarHeading";
 import EntryPointWrapper from "../components/EntryPointWrapper";
@@ -29,8 +28,7 @@ const DailyStarPage = () => {
           }}
         >
           <BlueTopBar containerClass="daily-star-container">
-            Powered by Horizon • {" "}
-            <Link to="/free-trial" className="underline">Request Free Trial</Link>
+            Powered by Daily Star Shorts
           </BlueTopBar>
 
           <Marquee
@@ -134,7 +132,7 @@ const DailyStarPage = () => {
           </div>
         </section>
 
-        <section className="daily-star-container pb-[58px] sm:pb-10 3xl:pb-[52px]">
+        <section className="daily-star-container pb-0 3xl:pb-[52px]">
           <div className="pt-[36px] pb-[24px] sm:pt-[18px] sm:pb-[34px] xl:pt-0 xl:pb-6 3xl:pt-0 3xl:pb-[30px]">
             <DailyStarHeading title="Business" titleClassName="text-[#1779BA]" />
           </div>
