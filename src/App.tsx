@@ -25,7 +25,7 @@ function App() {
           <Route path="/ecom" element={<EcomPage />} />
           <Route path="/sports" element={<SportsPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
-          <Route path="/daily-star" element={<DailyStarPage />} />
+          <Route path="/dailystar" element={<DailyStarPage />} />
         </Route>
       </Routes>
     </>
