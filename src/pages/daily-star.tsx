@@ -87,15 +87,15 @@ const DailyStarPage = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-5 3xl:gap-7">
-            <div className="w-full sm:w-1/2 xl:w-[65%] 3xl:w-[64%]">
+            <div className="w-full sm:w-[51%] lg:w-[65%] 3xl:w-[64%]">
               <ResponsiveImage
                 img="3.webp"
                 imgFolder="daily-star"
                 alt="Daily Star"
               />
             </div>
-            <div className="w-full sm:w-1/2 xl:w-[34%] 3xl:w-[34%] mt-0 sm:-mt-3 xl:mt-0">
-              <h3 className="text-[#101828] font-semibold text-2xl sm:text-[26px] xl:text-[28px] 3xl:text-4xl pb-2 sm:pb-3 xl:pb-5 3xl:pb-9">Shera Radhuni Highlights</h3>
+            <div className="w-full sm:w-[49%] lg:w-[34%] 3xl:w-[34%] mt-0 sm:-mt-2 xl:mt-0">
+              <h3 className="text-[#101828] font-semibold text-2xl sm:text-[20px] xl:text-[28px] 3xl:text-4xl pb-4 sm:pb-6 xl:pb-8 3xl:pb-9">Shera Radhuni Highlights</h3>
               <EntryPointWrapper
                 id="#199431"
                 skeletonType={EntryPointType.BLOCK}
