@@ -1,0 +1,29 @@
+/* ============== Ecom Styles =============== */
+
+.ecom-wrapper {
+  font-family: "TWKLausanne";
+}
+
+.ecom-container {
+  @apply max-w-[1920px] mx-auto px-5 md:px-6 xl:px-[44px] 2xl:px-[60px];
+  font-family: "TWKLausanne";
+}
+
+.ecom-section-padding {
+  @apply py-[75px] 2xl:py-[100px];
+}
+
+.ecom-section-padding-top {
+  @apply pt-[75px] 2xl:pt-[100px];
+}
+
+.ecom-section-padding-bottom {
+  @apply pb-[75px] 2xl:pb-[100px];
+}
+
+.ecom-section-heading {
+  @apply text-[#15234E] font-semibold text-center text-[28px] md:text-[32px] xl:text-[36px] 2xl:text-[48px] pb-4 md:pb-3 xl:pb-6 2xl:pb-14;
+  letter-spacing: -3%;
+  line-height: 108%;
+  font-family: "TWKLausanne";
+}

@@ -42,7 +42,7 @@ const DemoShowcase = () => {
             <img
               src={demo.image}
               alt={`${demo.title} Demo`}
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105 lg:group-hover:scale-110"
+              className="w-full h-auto transition-transform duration-1000 group-hover:scale-105 lg:group-hover:scale-110"
             />
 
             {/* Overlay on hover */}

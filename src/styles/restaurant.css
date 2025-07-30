@@ -1,0 +1,76 @@
+/* ============== Restaurant Styles =============== */
+
+.restaurant-wrapper {
+  font-family: "Figtree";
+}
+
+.restaurant-container {
+  @apply mx-auto px-8 sm:px-8 xl:px-[30px] 3xl:px-[40px];
+}
+
+.restaurant-container-sm {
+  @apply mx-auto px-8 sm:px-10 xl:px-[200px] 3xl:px-[266px];
+}
+
+.restaurant-container-left {
+  @apply mx-auto pl-4 md:pl-5 lg:pl-10 xl:pl-[90px] 3xl:pl-[120px];
+}
+
+.restaurant-container-sm-left {
+  @apply mx-auto pl-8 sm:pl-10 xl:pl-[200px] 3xl:pl-[266px] pr-8 sm:pr-0 xl:pr-[200px] 3xl:pr-[266px];
+}
+
+/* ---------- Section Padding ---------- */
+.restaurant-section-padding {
+  @apply py-[80px] sm:py-[50px] xl:py-[128px] 2xl:py-[170px];
+}
+
+.restaurant-section-padding-top {
+  @apply pt-[80px] sm:pt-[50px] xl:pt-[128px] 2xl:pt-[170px];
+}
+
+.restaurant-section-padding-bottom {
+  @apply pb-[80px] sm:pb-[50px] xl:pb-[128px] 2xl:pb-[170px];
+}
+
+/* ---------- Section Padding Small ---------- */
+.restaurant-section-padding-sm {
+  @apply py-[60px] sm:py-[60px] xl:py-[60px] 2xl:py-[80px];
+}
+
+.restaurant-section-padding-sm-top {
+  @apply pt-[60px] sm:pt-[60px] xl:pt-[60px] 2xl:pt-[80px];
+}
+
+.restaurant-section-padding-sm-bottom {
+  @apply pb-[60px] sm:pb-[60px] xl:pb-[60px] 2xl:pb-[80px];
+}
+
+/* ---------- Section Padding Large ---------- */
+.restaurant-section-padding-lg {
+  @apply py-[154px] sm:py-[140px] xl:py-[156px] 2xl:py-[210px];
+}
+
+.restaurant-section-padding-lg-top {
+  @apply pt-[154px] sm:pt-[140px] xl:pt-[156px] 2xl:pt-[210px];
+}
+
+.restaurant-section-padding-lg-bottom {
+  @apply pb-[154px] sm:pb-[140px] xl:pb-[156px] 2xl:pb-[210px];
+}
+
+/* ---------- Section Heading ---------- */
+.restaurant-section-heading {
+  @apply text-[#101828] font-medium text-center text-[42px] 3xl:text-[60px] leading-tight sm:leading-normal;
+  font-family: "Bebas Neue";
+}
+
+.restaurant-section-subheading {
+  @apply text-[#101828] font-medium text-center text-[26px] 3xl:text-[32px] pb-2 sm:pb-3 3xl:pb-4;
+  font-family: "Bebas Neue";
+}
+
+.restaurant-section-description {
+  @apply text-[#101828] text-center text-2xl 3xl:text-[32px] pt-1 xl:pt-2.5 3xl:pt-3 sm:leading-relaxed;
+  font-family: "Figtree";
+}

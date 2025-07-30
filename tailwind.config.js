@@ -13,9 +13,16 @@ export default {
         "3xl": "1920px",
       },
       fontFamily: {
+        "noto-serif-jp": ["Noto Serif JP", "sans-serif"],
         "helvetica-neue": ["Helvetica Neue", "sans-serif"],
         "twk-lausanne": ["TWKLausanne", "sans-serif"],
         "neue-plak": ["Neue Plak", "sans-serif"],
+        "bebas-neue": ["Bebas Neue", "sans-serif"],
+        figtree: ["Figtree", "sans-serif"],
+      },
+      backgroundImage: {
+        "restaurant-hero":
+          "url('/assets/images/restaurant/restaurant-hero.webp')",
       },
       animation: {
         marquee: "marquee var(--duration) linear infinite",

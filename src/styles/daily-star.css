@@ -1,0 +1,22 @@
+/* ============== Daily Star Styles =============== */
+
+.daily-star-wrapper {
+  font-family: "Noto Serif JP";
+}
+
+.daily-star-container {
+  @apply max-w-[1920px] mx-auto px-2.5 sm:px-6 xl:px-[40px] 3xl:px-[50px];
+  font-family: "Noto Serif JP";
+}
+
+.daily-star-section-padding {
+  @apply py-[75px] 2xl:py-[100px];
+}
+
+.daily-star-section-padding-top {
+  @apply pt-[75px] 2xl:pt-[100px];
+}
+
+.daily-star-section-padding-bottom {
+  @apply pb-[75px] 2xl:pb-[100px];
+}
