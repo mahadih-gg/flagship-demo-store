@@ -1,4 +1,5 @@
 import { EntryPoint, EntryPointSize, EntryPointType } from '@thinkflagship/web-shorts';
+import { useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import CursorSvg from './svg/CursorSvg';
 import {
@@ -10,8 +11,13 @@ import {
 const EntryPointWrapper = ({ id, skeletonType, skeletonSize }: { id: string, skeletonType: EntryPointType, skeletonSize: EntryPointSize }) => {
   const { width } = useWindowSize();
 
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
-    <div>
+    <div
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
       <EntryPoint
         id={id}
         skeletonType={skeletonType}
@@ -19,7 +25,7 @@ const EntryPointWrapper = ({ id, skeletonType, skeletonSize }: { id: string, ske
       />
       {
         width > 1024 && (
-          <CursorProvider>
+          <CursorProvider isHovering={isHovering}>
             <Cursor>
               <CursorSvg />
             </Cursor>
