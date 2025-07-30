@@ -1,4 +1,5 @@
 import { EntryPoint, EntryPointSize, EntryPointType } from '@thinkflagship/web-shorts';
+import { useEffect, useRef, useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import CursorSvg from './svg/CursorSvg';
 import {
@@ -9,16 +10,51 @@ import {
 
 const EntryPointWrapper = ({ id, skeletonType, skeletonSize }: { id: string, skeletonType: EntryPointType, skeletonSize: EntryPointSize }) => {
   const { width } = useWindowSize();
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [isHovering, setIsHovering] = useState(false);
+  const [suppressCursor, setSuppressCursor] = useState(false);
+
+  // 👇 Reset cursor suppression on hover
+  useEffect(() => {
+    if (isHovering) {
+      setSuppressCursor(false);
+    }
+  }, [isHovering]);
+
+  // 👇 Detect outside focus after click (modal open)
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (!wrapperRef.current?.contains(e.target as Node)) return;
+
+      // After short delay, check if focus left
+      setTimeout(() => {
+        const active = document.activeElement;
+        const clickedOutside =
+          active === document.body || !wrapperRef.current?.contains(active);
+        if (clickedOutside) {
+          setSuppressCursor(true); // modal likely opened
+          wrapperRef.current?.classList.remove("cursor-force-none");
+        }
+      }, 100);
+    };
+
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, []);
 
   return (
-    <div>
+    <div
+      ref={wrapperRef}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
       <EntryPoint
         id={id}
         skeletonType={skeletonType}
         skeletonSize={skeletonSize}
       />
       {
-        width > 1024 && (
+        width > 1024 && isHovering && !suppressCursor && (
           <CursorProvider>
             <Cursor>
               <CursorSvg />
