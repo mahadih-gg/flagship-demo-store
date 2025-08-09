@@ -1,5 +1,48 @@
 /* Custom Font Declarations */
 
+/* Albert Sans Font Declarations */
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/assets/font/Albert_Sans/AlbertSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* Aeonik Font Declarations */
 @font-face {
   font-family: "Aeonik";

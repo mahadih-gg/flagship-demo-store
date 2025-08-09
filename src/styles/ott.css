@@ -1,0 +1,28 @@
+/* ============== OTT Styles =============== */
+.ott-wrapper {
+  font-family: "Albert Sans", sans-serif;
+  @apply bg-[#141414];
+}
+
+.ott-container {
+  @apply pl-5 lg:pl-[60px] 2xl:pl-[80px];
+  font-family: "Albert Sans", sans-serif;
+}
+
+.ott-section-padding {
+  @apply py-[74px] lg:py-[60px] 2xl:py-[80px];
+}
+
+.ott-section-padding-top {
+  @apply pt-[74px] lg:pt-[60px] 2xl:pt-[80px];
+}
+
+.ott-section-padding-bottom {
+  @apply pb-[74px] lg:pb-[60px] 2xl:pb-[80px];
+}
+
+.ott-section-heading {
+  @apply text-[#E5E5E5] font-bold text-xl 2xl:text-[26px] pb-6 lg:pb-[18px] 2xl:pb-6;
+  line-height: 108%;
+  font-family: "Albert Sans", sans-serif;
+}

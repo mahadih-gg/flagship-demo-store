@@ -13,6 +13,7 @@ export default {
         "3xl": "1920px",
       },
       fontFamily: {
+        "albert-sans": ["Albert Sans", "sans-serif"],
         "noto-serif-jp": ["Noto Serif JP", "sans-serif"],
         "helvetica-neue": ["Helvetica Neue", "sans-serif"],
         "twk-lausanne": ["TWKLausanne", "sans-serif"],
