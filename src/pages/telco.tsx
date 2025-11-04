@@ -1,5 +1,6 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { FiChevronRight } from "react-icons/fi";
+import { Link } from "react-router";
 import BlueTopBar from "../components/BlueTopBar";
 import EntryPointWrapper from "../components/EntryPointWrapper";
 import FlagshipWrapper from "../components/FlagshipWrapper";
@@ -25,9 +26,8 @@ const TelcoPage = () => {
       <main className="telco-wrapper">
         <header>
           <BlueTopBar containerClass="telco-container">
-            Demo powered by Horizon
-            {/* • {" "}
-            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link> */}
+            Demo powered by Horizon • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
           </BlueTopBar>
           <Marquee
             className="text-[#98A1BC] text-xs uppercase"

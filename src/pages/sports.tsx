@@ -1,4 +1,5 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts"
+import { Link } from "react-router"
 import BlueTopBar from "../components/BlueTopBar"
 import EntryPointWrapper from "../components/EntryPointWrapper"
 import FlagshipWrapper from "../components/FlagshipWrapper"
@@ -17,9 +18,8 @@ const SportsPage = () => {
       <main className="sports-wrapper">
         <header>
           <BlueTopBar containerClass="ecom-container">
-            Demo powered by Horizon
-            {/* • {" "}
-            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link> */}
+            Demo powered by Horizon • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
           </BlueTopBar>
           <Marquee
             className="text-[#98A1BC] text-xs uppercase py-3 md:pt-4 2xl:pt-5"
