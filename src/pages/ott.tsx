@@ -1,5 +1,4 @@
 import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts"
-import { Link } from "react-router"
 import BlueTopBar from "../components/BlueTopBar"
 import EntryPointWrapper from "../components/EntryPointWrapper"
 import FlagshipWrapper from "../components/FlagshipWrapper"
@@ -18,8 +17,9 @@ const OttPage = () => {
       <main className="ott-wrapper">
         <header className="h-screen max-h-[81vh] lg:max-h-[75vh] 2xl:max-h-[100vh] flex flex-col">
           <BlueTopBar containerClass="ott-container" className="h-8 2xl:h-11">
-            Demo powered by Horizon • {" "}
-            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
+            Demo powered by Horizon
+            {/* • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link> */}
           </BlueTopBar>
           <div
             className="flex-1 bg-cover bg-center bg-no-repeat flex flex-col h-full"
