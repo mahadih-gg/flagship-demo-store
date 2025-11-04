@@ -26,8 +26,8 @@ const EcomPage = () => {
       <main className="ecom-wrapper">
         <header>
           <BlueTopBar containerClass="ecom-container">
-            Powered by Horizon • {" "}
-            <Link to="/free-trial" className="underline">Request Free Trial</Link>
+            Demo powered by Horizon • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
           </BlueTopBar>
           <Marquee
             className="text-[#98A1BC] text-xs uppercase py-3 md:pt-4 2xl:pt-5"

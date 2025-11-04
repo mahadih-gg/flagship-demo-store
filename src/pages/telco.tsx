@@ -26,13 +26,8 @@ const TelcoPage = () => {
       <main className="telco-wrapper">
         <header>
           <BlueTopBar containerClass="telco-container">
-            Powered by Horizon • {" "}
-            <Link
-              to="https://www.horizonexp.com/get-demo/"
-              className="underline"
-            >
-              Request Free Trial
-            </Link>
+            Demo powered by Horizon • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
           </BlueTopBar>
           <Marquee
             className="text-[#98A1BC] text-xs uppercase"

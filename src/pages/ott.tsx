@@ -18,13 +18,8 @@ const OttPage = () => {
       <main className="ott-wrapper">
         <header className="h-screen max-h-[81vh] lg:max-h-[75vh] 2xl:max-h-[100vh] flex flex-col">
           <BlueTopBar containerClass="ott-container" className="h-8 2xl:h-11">
-            Powered by Horizon • {" "}
-            <Link
-              to="https://www.horizonexp.com/get-demo/"
-              className="underline"
-            >
-              Request Free Trial
-            </Link>
+            Demo powered by Horizon • {" "}
+            <Link to="https://www.horizonexp.com/pricing" className="underline">Start for free today</Link>
           </BlueTopBar>
           <div
             className="flex-1 bg-cover bg-center bg-no-repeat flex flex-col h-full"
