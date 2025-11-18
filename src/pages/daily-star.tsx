@@ -1,4 +1,4 @@
-import { EntryPointSize, EntryPointType } from "@thinkflagship/horizon-web-shorts-staging";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import BlueTopBar from "../components/BlueTopBar";
 import DailyStarHeading from "../components/daily-star/DailyStarHeading";
 import EntryPointWrapper from "../components/EntryPointWrapper";

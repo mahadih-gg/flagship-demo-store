@@ -1,4 +1,4 @@
-import { EntryPointSize, EntryPointType } from "@thinkflagship/horizon-web-shorts-staging";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import EntryPointWrapper from "../../components/EntryPointWrapper";
 import ResponsiveImage from "../../components/ResponsiveImage";
 

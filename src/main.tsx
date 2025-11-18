@@ -1,4 +1,4 @@
-import "@thinkflagship/horizon-web-shorts-staging/dist/styles.css";
+import "@thinkflagship/web-shorts/dist/styles.css";
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router';

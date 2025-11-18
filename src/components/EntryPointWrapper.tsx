@@ -1,4 +1,4 @@
-import { EntryPoint, EntryPointSize, EntryPointType } from '@thinkflagship/horizon-web-shorts-staging';
+import { EntryPoint, EntryPointSize, EntryPointType } from '@thinkflagship/web-shorts';
 import { useEffect, useRef, useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import CursorSvg from './svg/CursorSvg';

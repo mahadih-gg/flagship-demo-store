@@ -1,4 +1,4 @@
-import { EntryPointSize, EntryPointType } from "@thinkflagship/horizon-web-shorts-staging";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
 import { Link } from "react-router";
 import BlueTopBar from "../components/BlueTopBar";
 import EcomHeader from "../components/ecom/EcomHeader";
