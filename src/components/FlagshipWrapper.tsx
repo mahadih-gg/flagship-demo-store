@@ -1,4 +1,4 @@
-import { FlagshipContainer } from "@thinkflagship/web-shorts";
+import { FlagshipContainer } from "@thinkflagship/horizon-web-shorts-staging";
 import { useEffect } from "react";
 
 const licenseKey = {
