@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
-    "@thinkflagship/horizon-web-shorts-staging": "^1.0.1",
+    "@thinkflagship/horizon-web-shorts-staging": "^1.0.2",
     "@thinkflagship/web-shorts": "^1.1.44",
     "clsx": "^2.1.1",
     "motion": "^12.16.0",

@@ -1,4 +1,4 @@
-import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/horizon-web-shorts-staging";
 import EntryPointWrapper from "../EntryPointWrapper";
 
 const EntryPointSection = () => {

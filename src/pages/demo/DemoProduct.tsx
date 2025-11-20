@@ -1,4 +1,4 @@
-import { EntryPointSize, EntryPointType } from "@thinkflagship/web-shorts";
+import { EntryPointSize, EntryPointType } from "@thinkflagship/horizon-web-shorts-staging";
 import { FiChevronRight } from "react-icons/fi";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import EntryPointWrapper from "../../components/EntryPointWrapper";
